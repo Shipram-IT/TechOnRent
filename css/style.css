@@ -38,10 +38,11 @@ body{
     background-position: center;
     background-size: cover;
 }
-/* #profile-btn, #mobile-menu{
-    position: absolute;
-    right: 1rem;
-} */
+.activated{
+    background-image: url("../img/cursor-bg.png");
+    background-position: center;
+    background-size: cover;
+}
 .primary-btn{
     background-color: var(--primary-purple);
     color: var(--primary-silver);
