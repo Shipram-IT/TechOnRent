@@ -1,0 +1,67 @@
+:root{
+    --primary-silver: #bdc3c7;
+    --primary-purple: #8e44ad;
+    --body-background: #ecf0f1;
+    --primary-purple-lighter: #9b59b6;
+}
+body{
+    background-color:  var(--body-background);
+    font-family: "Poppins", sans-serif;
+}
+#logo{
+    height: 5rem;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    color: var(--primary-purple);
+    font-weight: bold; 
+    flex-direction: row;  
+}
+.flex-item{
+    flex: 10%;
+    text-align: center;
+}
+@media (max-width: 800px) {
+    #navbar {
+        flex-direction: column;
+    }
+}
+#navbar a{
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.2rem 0.5rem;
+    text-transform: uppercase;
+}
+#navbar a:hover{
+    background-image: url("../img/cursor-bg.png");
+    background-position: center;
+    background-size: cover;
+}
+/* #profile-btn, #mobile-menu{
+    position: absolute;
+    right: 1rem;
+} */
+.primary-btn{
+    background-color: var(--primary-purple);
+    color: var(--primary-silver);
+    padding: 0.5rem 1.5rem !important;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    font-size:1rem;
+}
+.primary-btn:hover{
+    cursor: pointer;    
+    background-color: var(--primary-purple-lighter);
+    color: var(--primary-purple);
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    right: 1rem;
+    font-weight: bold;
+    color: var(--primary-purple);
+
+}
+
