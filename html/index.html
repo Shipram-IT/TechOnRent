@@ -17,25 +17,26 @@
         
         margin-top: 1rem;
     }
-    h1{
+    h1, h2, h3{
         text-transform: uppercase;
         color: var(--primary-purple);
     }
-    .item-container{
-        display: flex;
-        flex-direction: row;
+    h1{
         text-align: center;
     }
-    @media (max-width: 800px) {
-    .item-container, #numbers {
-            flex-direction: column;
-        }
+    .flex-container{
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        
     }
+    
     .item{
         margin: .5rem;
         flex: 1%;
         position: relative;
     }
+    
     .overlay {
         position: absolute;
         top: 0;
@@ -46,7 +47,8 @@
         width: 100%;
         opacity: 0;
         transition: .5s ease;
-        background-color: var(--primary-purple)
+        background-color: var(--primary-purple);
+        
     }
     .item:hover .overlay {
         opacity: 0.9;
@@ -63,18 +65,21 @@
         text-align: center;
         font-weight: bold;
     }
-    #numbers{
-        justify-content: center;
-        display: flex;
-        flex-direction: row;
-    }
+    
     .number-container{
         text-align: center;
         margin: 1rem 5rem;
     }
-    .number-element{
-        font-size: 1000%;
+    .number{
+        font-size: 600%;
         color: var(--primary-purple);
+        text-shadow: .3rem .5rem var(--primary-silver);
+    }
+
+    @media (max-width: 800px) {
+        .flex-container {
+            flex-direction: column;
+        }
     }
 
     
@@ -93,47 +98,56 @@
         </section>
         <section>
             <h1>Top Categories</h1>
-            <div class="item-container">
+            <div class="flex-container">
                 <div class="item">
                     <img src="../img/home/pexels-craig-dennis-205421.jpg" alt="">
                     <div class="overlay">
-                        <div class="text"><h2>Computer</h2></div>
+                        <div class="text"><h3>Computer</h3></div>
                     </div>
                 </div>  
                 <div class="item">
                     <img src="../img/home/pexels-jill-burrow-6858618.jpg" alt="">
                     <div class="overlay">
-                        <div class="text"><h2>Cellphones</h2></div>
+                        <div class="text"><h3>Cellphones</h3></div>
                     </div>
                 </div> 
                               
                 <div class="item">
                     <img src="../img/home/pexels-alex-andrews-1983037.jpg" alt="">
                     <div class="overlay">
-                        <div class="text"><h2>Cameras</h2></div>
+                        <div class="text"><h3>Cameras</h3></div>
                     </div>
                 </div>                
                 <div class="item">
                     <img class="item-image" src="../img/home/pexels-sound-on-3394651.jpg" alt="">
                     <div class="overlay">
-                        <div class="text"><h2>Audio & Musice</h2></div>
+                        <div class="text"><h3>Audio & Musice</h3></div>
                     </div>
                 </div>                               
             </div>
         </section>
-        <section id="numbers">
+        <section class="flex-container">
             <div class="number-container">
-                <span class="number-element">5</span><br>
-                <h1>Users</h1>
+                <h3><span class="number">5</span>
+                Users</h3>
             </div>
             <div  class="number-container">
-                <span class="number-element">4</span><br>
-                <h1>products</h1>
+                <h3><span class="number">4</span>
+                products</h3>
             </div>
             <div  class="number-container">
-                <span class="number-element">4</span><br>
-                <h1>categories</h1>
+                <h3><span class="number">4</span>
+                categories</h3>
             </div>
+        </section>
+        <section>
+            <h1>Top Products</h1>
+            <div class="flex-container">
+                <div class="flex-item">
+
+                </div>
+            </div>
+            
         </section>
     </main>
 
