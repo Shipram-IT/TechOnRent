@@ -23,7 +23,7 @@ body{
     flex: 10%;
     text-align: center;
 }
-@media (max-width: 800px) {
+@media (max-width: 704px) {
     #navbar {
         flex-direction: column;
     }
@@ -38,6 +38,9 @@ body{
     background-image: url("../img/cursor-bg.png");
     background-position: center;
     background-size: cover;
+}
+#navbar a:active{
+    color: var(--primary-purple-darker);
 }
 .activated{
     background-image: url("../img/cursor-bg.png");
