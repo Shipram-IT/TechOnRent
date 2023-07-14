@@ -3,6 +3,7 @@
     --primary-purple: #8e44ad;
     --body-background: #ecf0f1;
     --primary-purple-lighter: #9b59b6;
+    --primary-purple-darker: #4f1954;
 }
 body{
     background-color:  var(--body-background);
