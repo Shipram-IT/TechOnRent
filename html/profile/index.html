@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="./profile.css">
+    <link rel="stylesheet" href="../../css/table.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="icon" type="image/x-icon" href="../../img/favicon.png">
+</head>
+<body>
+    <nav id="navbar">
+        <a href="../home/index.html"><img src="../../img/logo.png" alt="TechOnRent" id="logo" class="flex-item"></a>
+        <a href="" class="web-only-element flex-item">Categories</a>
+        <a href="" class="web-only-element flex-item">About Us</a>
+        <a href="" class="web-only-element flex-item">Contact Us</a>
+        <a id="profile-btn" class="primary-btn web-only-element activated">Profile</a> 
+    </nav>
+    <main>
+        <div class="flex-container">
+            <div class="flex-content flex-left">
+                <img src="../../img/profile/20230522_145459.jpg" alt="profile-pic" id="profile-pic">
+                <div class="card">
+                <div id="name-section">
+                    <h1>Rafaeatul Kabir</h1>
+                    <p>member since 2023</p>
+                </div>
+                
+                <ul id="user-detail">
+                    
+                    <li><span class="material-symbols-outlined">call</span><a href="tel:+1-6472030153">647-203-0153</a></li>
+                    <li><span class="material-symbols-outlined">mail</span><a href="mailto:rafaeatul@gmail.com">rafaeatul@gmail.com</a></li>
+                    <li><span class="material-symbols-outlined">location_on</span><strong>North York, Toronto, ON, M2H-2N1, Canada</strong></li>
+                    <li>
+                        <p>International studnet in Lambton College, Toronto. Loves gadgets, movies and playing video games.</p>
+                    </li>
+                    <li class="account-balance">Earning: <span id="income">$0.00</span></li>
+                    <li class="account-balance">Expense: <span id="expense">$40.00</span></li>
+                </ul>
+            </div>
+            </div>
+            <div class="flex-content flex-right">
+                <h1>Rent History</h1>
+                <table class="rent-table">
+                    <tr>
+                        <th>Product</th>
+                        <th>Renter</th>
+                        <th>Due Date</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>Macbook Air 2019 Edition</td>
+                        <td>Paulo Massao Kawakami</td>
+                        <td>08/15/2023</td>
+                        <td><span class="status active">Active</span></td>
+                    </tr>
+                    <tr>
+                        <td>Asus Gaming Monitor</td>
+                        <td>Olumayowa Masuro</td>
+                        <td>08/15/2023</td>
+                        <td><span class="status active">Active</span></td>
+                    </tr>
+                    <tr>
+                        <td>Apple Watch 4</td>
+                        <td>Paulo Massao Kawakami</td>
+                        <td>06/13/2023</td>
+                        <td><span class="status due">Due</span></td>
+                    </tr>
+                    <tr>
+                        <td>Iphone 12</td>
+                        <td>Shivani Sehgal</td>
+                        <td>07/10/2023</td>
+                        <td><span class="status completed">Complete</span></td>
+                    </tr>
+                    <tr>
+                        <td>Flash 3 electric scooter</td>
+                        <td>Nowsheen Noor</td>
+                        <td>08/30/2023</td>
+                        <td><span class="status active">Active</span></td>
+                    </tr>
+                    <tr>
+                        <td>Galaxy S23 Ultra</td>
+                        <td>Nowsheen Noor</td>
+                        <td>07/10/2023</td>
+                        <td><span class="status completed">Complete</span></td>
+                    </tr>
+                    <tr>
+                        <td>Anker Soundcore Flare 2</td>
+                        <td>Olumayowa Masuro</td>
+                        <td>07/10/2023</td>
+                        <td><span class="status completed">Complete</span></td>
+                    </tr>
+                    <tr>
+                        <td>Galaxy Buds 2 Pro</td>
+                        <td>Paulo Massao Kawakami</td>
+                        <td>07/10/2023</td>
+                        <td><span class="status completed">Complete</span></td>
+                    </tr>
+                    <tr>
+                        <td>Microsoft Surface 6</td>
+                        <td>Nowsheen Noor</td>
+                        <td>07/10/2023</td>
+                        <td><span class="status completed">Complete</span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+        <p>&copy;SHIRAPAM 2023</p>    
+    </footer>
+</body>
+</html>

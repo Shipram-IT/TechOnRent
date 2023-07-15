@@ -1,0 +1,91 @@
+h1, h2, h3{
+    text-transform: uppercase;
+    color: var(--primary-purple);
+}
+.cat-name{
+    color: var(--primary-silver);
+}
+
+.flex-container{
+    justify-content: center;
+    display: flex;
+    /* flex-wrap: wrap;    */
+}
+.flex-content{
+    padding: 1rem;
+}
+.flex-left{
+    text-align: center;
+    /* background-color: red; */
+    flex: 40%;
+}
+.flex-right{
+    flex: 60%;
+}
+#profile-pic{
+    max-width: 20rem;
+    border-radius: 100%;
+    border: 5px solid var(--primary-silver);
+    margin-bottom: 1rem;
+}
+#name-section{
+    text-transform: uppercase;
+    color: var(--primary-purple-darker);
+    font-weight: bold;
+    position: relative;
+}
+#name-section p{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: -1.8rem;
+    font-size: 80%;
+}
+#user-detail{
+   list-style-type: none; 
+   text-align: center;
+   padding: 1rem;
+}
+#user-detail li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#user-detail li a{
+    text-decoration: none;
+    color: var(--primary-purple);
+    font-weight: bold;
+    margin-left: 5px;
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    padding: 0.5rem;
+    text-align: center;
+}
+.status{
+    font-size: 70%;
+    padding: 3px 10px;
+    color: white;
+    border-radius: 5px;
+}
+.active{
+    background-color: var(--primary-purple);
+}
+.due{
+    background-color: var(--primary-red);
+}
+.completed{
+    background-color: var(--primary-green);
+}
+.account-balance{
+    font-weight: bold;
+}
+#income{
+    color: var(--primary-green);
+    padding-left: 5px;
+}
+#expense{
+    color: var(--primary-purple);
+    padding-left: 5px;
+}

@@ -4,6 +4,9 @@
     --body-background: #ecf0f1;
     --primary-purple-lighter: #9b59b6;
     --primary-purple-darker: #4f1954;
+    --primary-silver-darker: #95a5a6;
+    --primary-green: #27ae60;
+    --primary-red: #e74c3c;
 }
 body{
     background-color:  var(--body-background);
@@ -17,7 +20,7 @@ body{
     align-items: center;
     color: var(--primary-purple);
     font-weight: bold; 
-    flex-direction: row;  
+    flex-direction: row; 
 }
 .flex-item{
     flex: 10%;
@@ -46,6 +49,7 @@ body{
     background-image: url("../img/cursor-bg.png");
     background-position: center;
     background-size: cover;
+    color: var(--primary-purple) !important;
 }
 .primary-btn{
     background-color: var(--primary-purple);
