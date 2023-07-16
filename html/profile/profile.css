@@ -2,9 +2,6 @@ h1, h2, h3{
     text-transform: uppercase;
     color: var(--primary-purple);
 }
-.cat-name{
-    color: var(--primary-silver);
-}
 
 .flex-container{
     justify-content: center;
@@ -16,7 +13,6 @@ h1, h2, h3{
 }
 .flex-left{
     text-align: center;
-    /* background-color: red; */
     flex: 40%;
 }
 .flex-right{
@@ -88,4 +84,18 @@ h1, h2, h3{
 #expense{
     color: var(--primary-purple);
     padding-left: 5px;
+}
+
+@media (min-width: 0) and (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    .flex-left{
+        display: flex;
+    }
+    #profile-pic-container{
+        margin-right: 1rem;
+    }
 }
