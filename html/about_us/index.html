@@ -2,182 +2,72 @@
     <html lang="en">
         <head>
             <meta charset="utf-8"name="viewport" content="width=device-width", initial-scale="1">
-            <link rel = "stylesheet" href ="./project.css">
             <link rel = "stylesheet" href ="../../css/style.css">
-
-            <style>
-
-                #img1{
-                    border-width: 2px;
-                    border-color: purple;
-                    border-style: solid;
-                
-                    
-                }
-
-                .font2 {
-                    font-family: "Roboto,Arial,Helvetica,sans-serif"
-                }
-
-                #circle_img {
-                    border-radius: 50%;
-                    border-style: solid;
-                    border-color: #800080;
-
-                }
-                
-                #flex-container {
-                    float:left;
-                    position: relative;
-                         
-
-                }
-                
-                #flex-container2 {
-                    float: left;
-                    position: relative;
-                    padding-left:1%;
-                    
-
-
-                }
-
-                #flex-container3 {
-                    float:left;
-                    padding-left: 1%;
-                    position:relative;
-                    
-                }
-
-                #flex-container4 {
-                    float:left;
-                    padding-left: 1%;
-                    position:relative;
-                   
-
-                }
-                /* footer style here */
-
-                .footer {
-                background-color:lightsteelblue; opacity: inherit;
-                padding: 20px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-            .vendor-list {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 20px;
-            }
-
-            .vendor-list img {
-                max-width: 100px;
-                max-height: 50px;
-            }
-                
-            .footer.overlay {
-                display: flex;
-               background-color: cornflowerblue; 
-               padding-bottom: 50px;
-            
-            }
-            
-            
-
-            </style>
+            <link rel = "stylesheet" href ="./project.css">
         </head>
-        <main>
         <body>
-            <nav id="navbar">
-                <a href=""><img src="../../img/logo.png" alt="TechOnRent" id="logo" class="flex-item"></a>
-                <a href="" class="web-only-element flex-item">Categories</a>
-                <a href="" class="web-only-element flex-item">About Us</a>
-                <a href="" class="web-only-element flex-item">Contact Us</a>
-                <a id="profile-btn" class="primary-btn web-only-element">Profile</a> 
-            </nav>
-            
-            
-            <header><h2><span style="color: #800080;">ABOUT</span> US</h2></header>
-                                
-                <!-- Our Vision Statement-->
-                    <div id = "flex-section">
-                        <section> 
-                        <P>
-                            <h3>Our Vision</h3>
-                            <P>
-                            Our Goal is to provide a remarkable service for all studnets. We hope that one day our service will inspaire all students far and beyodn to achieve greatness.<br>
+            <main>
+                <nav id="navbar">
+                    <a href=""><img src="../../img/logo.png" alt="TechOnRent" id="logo" class="flex-item"></a>
+                    <a href="" class="web-only-element flex-item">Categories</a>
+                    <a href="" class="web-only-element flex-item">About Us</a>
+                    <a href="" class="web-only-element flex-item">Contact Us</a>
+                    <a id="profile-btn" class="primary-btn web-only-element">Profile</a> 
+                </nav>                       
+                <header id="about-us-header">
+                    <h1>ABOUT US</h1>
+                </header>
+                <section id="our-vision">
+                    <h1>Our Vision</h1>
+                    <P>
+                        Our Goal is to provide a remarkable service for all studnets. We hope that one day our service will inspaire all students far and beyodn to achieve greatness.
+                        As we not only strive for business and profit, we believe is unique and by that we owe all our students the best technology we can offer for rental at low cost. 
+                        We love to thank our partners Lambton College, ChelseaFC, EVO Championsho and Microsoft for working alongisde us to provide this remarkable service.
+                    </P>
 
-                            As we not only strive for business and profit, we believe is unique and by that we owe all our students the best technology we can offer for rental at low cost.<br> 
-
-                            We love to thank our partners Lambton College, ChelseaFC, EVO Championsho and Microsoft for working alongisde us to provide this remarkable service.
-                        </P>
-                        
-
-
-
-
-                    </section>
-                     </div> 
-                     <hr>
-                    <!--- Text and image Information for Mayowa-->
-                    <div id="flex-container">
-                        
-                    <h1><span style="color: purple;">"We Strive</span> for Perfection."</h1>
-                          <h6>"Mayowa Mosuro- FSDT Lambton Student"</h6>
-                          <img id = "circle_img" src="../../img/mayor3.jpg" alt="Mayowa" height="300" width="310">
+                </section>
+                <h1>Meet Our Team</h1>
+                <div class="flex-container-team">
+                    <div class="flex-item-team">
+                        <h1><span class="focus-text">"We Strive</span> for Perfection."</h1>
+                        <h6>"Mayowa Mosuro- FSDT Lambton Student"</h6>
                     </div>
-                    <!--- Text and image Information for Paulo-->
-                    <div id="flex-container2">
-
-                    <h1><span style="color: purple;">"Our Service</span> is Unique."</h1>
-                    <h6>"Paulo Kawakami- FSDT Lambton Student"</h6>
-                    <img id = "circle_img" src="../../img/paulo.jpeg" alt="Paulo" height="300" width="300">
+                    <div class="flex-item-team">
+                        <img  src="../../img/mayor3.jpg" alt="Mayowa">
                     </div>
-                    
-
-                    <!--- Text and image Information for Rafaet-->
-                    
-                    <div id="flex-container3">
-                    <h1><span style="color: purple;">"Customers</span> Value Us."</h1>
-                    <h6>"Rafaet Kabir- FSDT Lambton Student"</h6>
-                    <img id = "circle_img" src="../../img/rafaet.jpeg" alt="Mayowa" height="300" width="310">
+                   
+                </div>
+                <div class="flex-container-team-reverse">
+                    <div class="flex-item-team">
+                        <h1><span class="focus-text">"Our Service</span> is Unique."</h1>
+                        <h6>"Paulo Kawakami- FSDT Lambton Student"</h6>
                     </div>
-                    
-                    <!--- Text and image Information for Shivani-->
-                    <div id="flex-container4">
-                        <h1><span style="color: purple;">"Our Service</span> Your Choice."</h1>
-                              <h6>"Shivani Seghal- FSDT Lambton Student"</h6>
-                              <img id = "circle_img" src="../../img/shivani.jpg" alt="Shivani" height="300" width="310">
+                    <div class="flex-item-team">
+                        <img  src="../../img/paulo.jpeg" alt="paulo">
                     </div>
-                        <!--- Section for Flex Information-->
+                   
+                </div>
+                <div class="flex-container-team">
+                    <div class="flex-item-team">
+                        <h1><span class="focus-text">"Customers</span> Value Us."</h1>
+                        <h6>"Rafaet Kabir- FSDT Lambton Student"</h6>
+                    </div>
+                    <div class="flex-item-team">
+                        <img  src="../../img/rafaet.jpeg" alt="rafaeat">
+                    </div>
+                   
+                </div>
+                <div class="flex-container-team-reverse">
+                    <div class="flex-item-team">
+                        <h1><span class="focus-text">"Our Service</span> Your Choice."</h1>
+                        <h6>"Shivani Seghal- FSDT Lambton Student"</h6>
+                    </div>
+                    <div class="flex-item-team">
+                        <img  src="../../img/shivani.jpg" alt="shivani">
+                    </div>
+                </div>
                
             </main>
-
-
-            </div>
-        
-                <footer class="footer">
-                    <div class="vendor-list">
-                        <img src="../../img/80658.png" alt="Microsoft" width="100%" height="100%">
-                        <img src="../../img/chelsea-fc.png" alt="ChelseaFC" width="100%" height="100%">
-                        <img src="../../img/Evo.png" alt="EVO" width="100%" height="100%">
-                        <img src="../../img/lambton.png" alt="Vendor 3" width="100%" height="100%">
-                        <img src="../../img/ttc.png" alt="Vendor 3" width="100%" height="100%">
-                        <!-- Add more vendor images here -->
-                    </div>
-
-                    <div class="footer.overlay">
-                        <a href="Terms & Condtions" style="text-decoration: none;"> Terms & Condtions</a><br>
-                        <a href=" Privacy Policy" style="text-decoration: none;"> Privacy Policy</a><br>
-                        <a href="Contact Us"  style="text-decoration: none;"> Contact Us</a><br>
-                        
-
-                    </div>
-                </footer>
-
             
         </body>
     

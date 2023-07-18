@@ -1,25 +1,44 @@
 
-body {
-    background-color:silver
+#about-us-header{
+    background-color: var(--primary-purple);
+    color: white;
+    text-align: center;
+    padding: 3rem;
+}
+#our-vision{
+    text-align: center;
+    padding: 1rem;
+}
+#our-vision p{
+    text-align: justify;
+}
+.flex-container-team, .flex-container-team-reverse{
+    display: flex;
+    align-items: center;
+}
+.flex-container-team {
+    flex-direction: row;        
+}
+.flex-container-team-reverse {
+    flex-direction: row-reverse;        
+}
+.flex-item-team{
+    flex: 50%;
+    text-align: center;
+}
+.flex-item-team img{
+    max-width: 20rem;
+    border-radius: 100%;
+}
+.focus-text{
+    color: var(--primary-purple);
+}
+@media (max-width: 481px) {
+    .flex-container-team,.flex-container-team-reverse {
+        flex-direction: column;
+    }
 }
 
 
-
-.main1 {
-
-    position: relative;
-
-}
-
-.h2first {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: purple;
-    font-weight: bold;
-
-    font-family: "Roboto,Arial,Helvetica,sans-serif"
-}
-
+/* /////////////////////////////////////////////// */
 
