@@ -24,7 +24,6 @@
 }
 .flex-item-team{
     flex: 50%;
-    text-align: center;
 }
 .flex-item-team img{
     max-width: 20rem;
@@ -32,6 +31,13 @@
 }
 .focus-text{
     color: var(--primary-purple);
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    padding: 0.5rem;
+    text-align: center;
+    margin: 1rem;
 }
 @media (max-width: 481px) {
     .flex-container-team,.flex-container-team-reverse {
