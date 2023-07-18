@@ -1,0 +1,153 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+/*End of Main Content Container*/
+
+
+/*Banner Section*/
+#banner-container{
+    margin-bottom: 10px;
+    padding: 15px;
+    background-image: url("../../img/contact_us/pexels-pixabay-220072.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#banner-text{
+    text-align: center;
+    color: white;
+    font-size: 150%;
+    padding: 10px;
+    text-shadow: 1px 1px 2px black;
+}
+
+/*End of Banner Section*/
+
+
+/*Static Information container and Form Container*/
+.flex-item-left {
+    color: white;
+    padding: 10px;
+    background-color: var(--primary-purple-darker);
+    background-image: linear-gradient(to right, var(--primary-purple-darker), var(--primary-purple-lighter));
+}
+
+table{
+    text-align: left;
+    width: 100%;
+    padding-left: 2rem;
+}
+table th{
+    vertical-align: top;
+}
+table a{
+    color: white;
+}
+
+.flex-icon-container{
+    display: flex;
+    text-align: center;
+}
+
+svg{
+    fill:white;
+    /* margin: 15px; */
+}
+.icon-link{
+    margin: 20px;
+}
+
+.flex-item-right {
+    color: var(--primary-purple-darker);
+    padding: 10px;
+    flex: auto;
+    background-color: var(--primary-silver);
+    background-image: linear-gradient(to right, var(--primary-silver), var(--body-background));
+}
+/*End of Static Information container and Form Container*/
+
+
+/*Form Styles*/
+textarea, select, input {
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 15px;
+    border-style: solid;
+    padding: 15px;
+    border-color: var(--primary-purple-lighter);
+    border-width: 2px;
+}
+
+input:focus, select:focus, textarea:focus {
+    border: 3px solid var(--primary-purple-darker);
+    outline: none;
+}
+
+label{
+    padding: 10px 0px 0px 5px;
+    float: left;
+}
+/*End of form styles*/
+
+/*Map section*/
+#map{
+    width: 100%;
+    /* height: 50%; */
+    /*border: solid var(--primary-purple);
+    border-radius: 30px;*/
+    border: none;
+    border-width: 1px;
+}
+
+#map-container{
+    padding: 10px;
+    margin-top: 10px;
+    /*background-image: linear-gradient(to right, var(--primary-silver), var(--body-background))*/;
+    color: var(--primary-purple-darker);
+    font-size: 0.8em;
+
+}
+/*End of Map Section*/
+
+/*Text Format Section*/
+#main-text-content{
+    font-weight: bold;
+}
+/*End of Text format Section */
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media screen and (max-width: 480px){
+    .flex-container {
+        flex-direction: column;
+    }
+    .flex-item-left {
+        max-width: 100%;
+    }
+
+    .flex-item-right {
+        max-width: 100%;
+    }
+}
+
+/*
+@media screen and (max-width: 768px) and (min-width: 481px){
+    .flex-container {
+    }
+}
+*/
+
+@media screen and (min-width: 769px){
+    .flex-container {
+        
+    }
+
+    .flex-item-left {
+        width: 40%;
+    }
+
+    .flex-item-right {
+        width: 60%;
+    }
+}
