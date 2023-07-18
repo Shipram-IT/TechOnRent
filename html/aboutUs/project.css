@@ -1,6 +1,6 @@
 
 body {
-    background-color:rgb(240, 237, 237);
+    background-color:silver
 }
 
 
@@ -17,6 +17,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     color: purple;
+    font-weight: bold;
 
     font-family: "Roboto,Arial,Helvetica,sans-serif"
 }
