@@ -64,7 +64,7 @@ svg{
     padding: 10px;
     flex: auto;
     background-color: var(--primary-silver);
-    background-image: linear-gradient(to right, var(--primary-silver), var(--body-background));
+    background-image: linear-gradient(to bottom, var(--primary-silver), var(--body-background));
 }
 /*End of Static Information container and Form Container*/
 
