@@ -1,0 +1,151 @@
+/* body{
+    margin: 0;
+}
+#navbar{
+    margin: 8px 1.2rem;
+} */
+section{
+    width: 100%;
+}
+img{
+    width: 100%;
+    display: block;
+}
+#banner{
+    
+    margin-top: 1rem;
+}
+h1, h2, h3{
+    text-transform: uppercase;
+    color: var(--primary-purple);
+}
+.cat-name{
+    color: var(--primary-silver);
+}
+h1{
+    text-align: center;
+}
+.flex-container{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;   
+}
+.flex-content{
+    margin: .5rem;
+    flex: 0 0 33%;
+    max-width: 20rem;
+}
+.item{
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: var(--primary-purple);
+    
+}
+.item:hover .overlay {
+    opacity: 0.9;
+    cursor: pointer;
+}
+.text {
+    color: var(--primary-silver);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: bold;
+}
+
+.number-container{
+    text-align: center;
+}
+.number{
+    font-size: 600%;
+    color: var(--primary-purple);
+    text-shadow: .3rem .5rem var(--primary-silver);
+}
+.product-image{
+    border-radius: 5px;
+}
+.product-container{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    padding: 0.5rem;
+    text-align: center;
+}
+.product-link{
+    text-decoration: none;
+    color: var(--primary-purple-darker);
+}
+.product-container:hover{
+    background-color: var(--primary-silver);
+}
+
+.topright {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--primary-purple);
+    padding: 10px;
+    opacity: 0.8;
+    visibility: hidden;
+}
+.product-description{
+    text-align: left;
+    padding: 0px 2px;
+}
+.price{
+    float: right;
+    color: var(--primary-purple);
+}
+#partner{
+    margin-top: 2rem;
+    width: 100%;
+    background-color: var(--primary-silver);
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+
+}
+.partner-logo{
+    max-width: 15rem;
+    display: inline;
+}
+#partner-logo-container{
+    text-align: center;
+}
+
+@media (min-width: 0) and (max-width: 480px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .flex-content{
+        flex: 0 0 50%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .topright{
+        visibility: visible;
+    }
+    .overlay{
+        visibility: hidden;
+    }
+}
+
+
+  

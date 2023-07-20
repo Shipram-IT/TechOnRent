@@ -1,0 +1,22 @@
+.rent-table{
+    border-collapse: collapse;
+    width: 100%;
+    /* text-align: center; */
+}
+.rent-table td, .rent-table th{
+    border: 1px solid white;
+    padding: 8px;
+}
+.rent-table tr:nth-child(even){
+    background-color: var(--primary-silver);
+}
+.rent-table tr:hover{
+    background-color: var(--primary-silver-darker);
+}
+.rent-table th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: var(--primary-purple);
+    color: white;
+}
