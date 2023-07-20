@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/table.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="icon" type="image/x-icon" href="../../img/favicon.png">
+</head>
+<style>
+    h1, h2, h3{
+        text-transform: uppercase;
+        color: var(--primary-purple);
+    }
+    .image-container{
+        max-width: 20rem;
+        height: auto;
+        position: relative;
+        background-color: red;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .image{
+        width: 100%;
+        display: block;
+    }
+    .text-on-image{
+        background-color: purple;
+        color: white;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding: 20px;
+        text-align: center;
+    }
+    .status{
+        font-size: 70%;
+        padding: 3px 10px;
+        color: white;
+        border-radius: 5px;
+    }
+    .active{
+        background-color: var(--primary-purple);
+    }
+    .due{
+        background-color: var(--primary-red);
+    }
+    .completed{
+        background-color: var(--primary-green);
+    }
+    .card{
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        border-radius: 5px;
+        padding: 0.5rem;
+        text-align: center;
+    }
+</style>
+<body>
+    <nav id="navbar">
+        <a href=""><img src="../../img/logo.png" alt="TechOnRent" id="logo" class="flex-item"></a>
+        <a href="" class="web-only-element flex-item">Categories</a>
+        <a href="" class="web-only-element flex-item">About Us</a>
+        <a href="" class="web-only-element flex-item">Contact Us</a>
+        <a id="profile-btn" href="../profile/index.html" class="primary-btn web-only-element">Profile</a> 
+    </nav>
+    <nav id="mobile-nav">
+        <a href="" >Categories</a><span class="separator"></span>
+        <a href="" >About Us</a><span class="separator"></span>
+        <a href="" >Contact Us</a><span class="separator"></span>
+        <a href="../profile/index.html">Profile</a> 
+    </nav>
+    <main>
+        <h1>Sample Header 1</h1>
+        <h2>Sample Header 2</h2>
+        <h3>Sample Header 3</h3>
+        <a href="" class="primary-btn">Link like button</a>
+        <a href="" class="primary-btn activated">Activated Link like button</a>
+        <h4>A sample table:</h4>
+        <table class="rent-table">
+            <tr>
+              <th>Company</th>
+              <th>Contact</th>
+              <th>Country</th>
+            </tr>
+            <tr>
+              <td>Alfreds Futterkiste</td>
+              <td>Maria Anders</td>
+              <td>Germany</td>
+            </tr>
+            <tr>
+              <td>Centro comercial Moctezuma</td>
+              <td>Francisco Chang</td>
+              <td>Mexico</td>
+            </tr>
+            <tr>
+              <td>Ernst Handel</td>
+              <td>Roland Mendel</td>
+              <td>Austria</td>
+            </tr>
+            <tr>
+              <td>Island Trading</td>
+              <td>Helen Bennett</td>
+              <td>UK</td>
+            </tr>
+            <tr>
+              <td>Laughing Bacchus Winecellars</td>
+              <td>Yoshi Tannamuri</td>
+              <td>Canada</td>
+            </tr>
+            <tr>
+              <td>Magazzini Alimentari Riuniti</td>
+              <td>Giovanni Rovelli</td>
+              <td>Italy</td>
+            </tr>
+        </table>
+    
+        <h4>Sample Image with text</h4>
+        <div class="image-container">
+            <img class="image" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            <div class="text-on-image">
+                <h3>Name Name</h3>
+                <h5>Test Description</h5>
+            </div>
+        </div>
+        <h4>Sample Tags</h4>
+        <span class="status active">Active</span>
+        <span class="status due">Active</span>
+        <span class="status completed">Active</span>
+        <h4>Sample Card</h4>
+        <div class="card" style="height: 10rem; width: 20rem">
+            
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;SHIRAPAM 2023</p>    
+    </footer>
+</body>
+</html>
