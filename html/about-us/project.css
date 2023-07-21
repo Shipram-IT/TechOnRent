@@ -9,38 +9,116 @@
     text-align: center;
     padding: 1rem;
 }
-#our-vision p{
-    text-align: justify;
-}
 .flex-container-team, .flex-container-team-reverse{
     display: flex;
     align-items: center;
-}
-.flex-container-team {
+    flex: 50%;
     flex-direction: row;        
 }
-.flex-container-team-reverse {
-    flex-direction: row-reverse;        
-}
+/* .flex-container-team {
+    
+} */
+
 .flex-item-team{
     flex: 50%;
+    
 }
 .flex-item-team img{
-    max-width: 20rem;
+    max-width: 70%;
     border-radius: 100%;
+    box-shadow: 0 15px 20px 0 rgba(30, 1, 19, 0.2);
+}
+.flex-item-vision{
+    flex: 50%;
+    padding: 1rem;
+}
+.flex-item-vision img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+#our-vision .focus-text{
+    font-weight: bold;
 }
 .focus-text{
     color: var(--primary-purple);
 }
 .card{
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    
     border-radius: 5px;
     padding: 0.5rem;
     text-align: center;
     margin: 1rem;
+    box-shadow: 0 15px 20px 0 rgba(30, 1, 19, 0.2);
+}
+
+.footer {
+    padding: 2rem;
+    display: flex;
+    color: white;
+    background-color:var(--primary-purple-darker);
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.footer div {
+    text-align: center;
+}
+.col-1{
+    text-align: center;
+    padding-inline-start: 0; /* to remove the default padding of ul */
+}
+.col-1 a {
+    text-decoration: none;
+    color:white;
+}
+.team-container{
+    display: flex;
+}
+ul {
+    list-style: none;
+}
+
+form input {
+    width: 100%;
+    height: 35px;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 1rem;
+    outline: none;
+    border: none;
+
+}
+
+form button {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+
+
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    .team-container{
+        flex-direction: column;
+    }
+    .flex-container-team-reverse {
+        flex-direction: row-reverse;        
+    }
 }
 @media (max-width: 481px) {
     .flex-container-team,.flex-container-team-reverse {
+        flex-direction: column;
+        
+    }
+    .team-container{
+        flex-direction: column;
+    }
+    .footer{
         flex-direction: column;
     }
 }
