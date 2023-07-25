@@ -1,0 +1,155 @@
+/*Main Content Container*/
+.flex-container {
+    text-align: center;
+    display: flex;
+}
+
+/* clear main style padding property*/
+main{
+    padding-top: 0;
+}
+/*End of Main Content Container*/
+
+
+/*Banner Section*/
+#banner-container{
+    margin-bottom: 1em;
+    padding: 1rem;
+    background-image: url("../../img/contact-us/pexels-pixabay-220072.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#banner-text{
+    text-align: center;
+    color: white;
+    font-size: 150%;
+    padding: 1em;
+    text-shadow: 1px 1px 2px black;
+}
+
+/*End of Banner Section*/
+
+
+/*Static Information container and Form Container*/
+.flex-item-left {
+    color: var(--primary-purple-darker);
+    padding: .5em .5em 0 .5em;
+    background-color: var(--primary-silver);
+    background-image: linear-gradient(to bottom, var(--primary-silver), var(--body-background));
+}
+
+
+.flex-item-right {
+    color: white;
+    padding: .5em .5em 0 .5em;
+    background-color: var(--primary-purple-darker);
+    background-image: linear-gradient(to right, var(--primary-purple-darker), var(--primary-purple-lighter));
+}
+/*End of Static Information container and Form Container*/
+
+
+/*Form Styles*/
+select, input {
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 15px;
+    border-style: solid;
+    padding: 1em;
+    border-color: var(--primary-purple-lighter);
+    border-width: .3em;
+}
+.flex-form-container{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    align-items: flex-end;
+    border: .5em;
+}
+
+.flex-form-element{
+    width: 40% ;
+    vertical-align: bottom;
+}
+input:focus, select:focus, textarea:focus {
+    border: .5em solid var(--primary-purple-darker);
+    outline: none;
+}
+
+label{
+    padding: 1em 0 0 .5em;
+    float: left;
+}
+/*End of form styles*/
+
+/*Text Format Section*/
+#main-text-content{
+    font-weight: bold;
+}
+/*End of Text format Section */
+
+/*Items list*/
+.item-container{
+    display: flex;
+    padding: .25em;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.item-details{
+    text-align: left;
+    border-style: solid;
+}
+
+.flex-image{
+    max-width: 30%;
+    
+}
+
+.heading{
+    text-transform: capitalize;
+    font-weight: bold;
+    color: var(--primary-purple)
+}
+
+
+/*End of the Items list Section*/
+
+/*totals*/
+.heading-alternate{
+    text-transform: capitalize;
+    font-weight: bold;
+}
+#totals-container{
+    text-align: left;
+    padding: 1em 0 0 2em;
+}
+/*end totals*/
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media screen and (max-width: 768px){
+    .flex-container {
+        flex-direction: column;
+    }
+    .flex-item-left {
+        max-width: 100%;
+    }
+
+    .flex-item-right {
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 769px){
+
+    .flex-item-left {
+        width: 60%;
+    }
+
+    .flex-item-right {
+        width: 40%;
+    }
+    footer {
+        clear:both
+
+    }
+}
