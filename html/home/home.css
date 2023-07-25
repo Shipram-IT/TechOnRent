@@ -15,10 +15,61 @@ img{
     
     margin-top: 1rem;
 }
+#banner-section{
+    position: relative;
+}
+#banner-text{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
 h1, h2, h3{
     text-transform: uppercase;
     color: var(--primary-purple);
 }
+#banner-text h1{
+    font-family: 'League Gothic';
+    text-transform: capitalize;
+    font-size: 10vw;
+    font-weight: 400;
+    margin: 0;
+
+}
+#banner-text pre{
+    text-align: center;
+    margin: 0;
+}
+#banner-text h4{
+    font-family: 'Raleway';
+    color: var(--primary-purple);
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.5vw;
+
+}
+#banner-text h4 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid var(--primary-purple); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--primary-purple); }
+  }
 .cat-name{
     color: var(--primary-silver);
 }
