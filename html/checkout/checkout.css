@@ -3,6 +3,9 @@
     text-align: center;
     display: flex;
 }
+.flex-container2{
+    display: flex;
+}
 
 /* clear main style padding property*/
 main{
@@ -96,8 +99,8 @@ label{
     flex-direction: column;
 }
 .item-details{
-    text-align: left;
     border-style: solid;
+    text-align: left;
 }
 
 .flex-image{
