@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/table.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="icon" type="image/x-icon" href="../../img/favicon.png">
+    <link rel="stylesheet" href="./product-detail.css">
+</head>
+<style>
+    h1, h2, h3{
+        text-transform: uppercase;
+        color: var(--primary-purple);
+    }
+    .image-container{
+        max-width: 20rem;
+        height: auto;
+        position: relative;
+        background-color: red;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .image{
+        width: 100%;
+        display: block;
+    }
+    .text-on-image{
+        background-color: purple;
+        color: white;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding: 20px;
+        text-align: center;
+    }
+    .status{
+        font-size: 70%;
+        font-weight: bold;
+        padding: 3px 10px;
+        border-radius: 5px;
+    }
+    .active{
+        background-color: var(--primary-purple);
+    }
+    .due{
+        background-color: var(--primary-red);
+    }
+    .completed{
+        background-color: var(--primary-green);
+    }
+    .card{
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        border-radius: 5px;
+        padding: 0.5rem;
+        text-align: center;
+    }
+</style>
+<body>
+    <nav id="navbar">
+        <a href="../home/index.html"><img src="../../img/logo.png" alt="TechOnRent" id="logo" class="flex-item"></a>
+        <a href="../categories/index.html" class="web-only-element flex-item">Categories</a>
+        <a href="../about-us/index.html" class="web-only-element flex-item">About Us</a>
+        <a href="../contact-us/index.html" class="web-only-element flex-item">Contact Us</a>
+        <a id="profile-btn" href="../profile/index.html" class="primary-btn web-only-element">Profile</a> 
+    </nav>
+    <nav id="mobile-nav">
+        <a href="../categories/index.html" >Categories</a><span class="separator"></span>
+        <a href="../about-us/index.html" >About Us</a><span class="separator"></span>
+        <a href="../contact-us/index.html" >Contact Us</a><span class="separator"></span>
+        <a href="../profile/index.html">Profile</a> 
+    </nav>
+
+    <main>
+        <h1><a href="../product-list/index.html" class="status border-btn"><</a>Product Detail</h1>
+        <div class="flex product-detail-wrapper">
+            <div class="left">
+                <div class="product-image">
+                    <img src="../../img/products/product-detail-img1.jpg" alt="phone" class="product-image">
+                </div>
+                <div class="buttons-wrapper">
+                    <div class="primary-btn">Add to Cart</div>
+                    <a href="../checkout/index.html"><div class="secondary-btn">Buy Now</div></a>
+                </div>
+            </div>
+            <div class="right">
+                <div class="card">
+                    <div class="card-content">
+                        <h2>SAMSUNG Galaxy S22 Ultra 5G</h2>
+                        <div class="rating">
+                            <span class="status border-btn">
+                                4.5 <svg width="10px" height="10px" viewBox="0 -0.03 60.062 60.062" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><defs><style> .cls-1 { fill: #9b59b6; fill-rule: evenodd; } </style></defs><path class="cls-1" d="M670.68,227.733a3.03,3.03,0,0,0,.884,1.072,3.168,3.168,0,0,0,1.282.578l14.662,2.965a3.067,3.067,0,0,1,2.394,2.284,3,3,0,0,1-1.118,3.084l-11.408,8.654a3.01,3.01,0,0,0-.994,1.3,2.956,2.956,0,0,0-.16,1.618L679.3,266.42a3,3,0,0,1-1.275,3.01,3.166,3.166,0,0,1-3.328.146l-13.18-7.407a3.165,3.165,0,0,0-3.091,0l-13.181,7.407a3.156,3.156,0,0,1-3.327-.146,3,3,0,0,1-1.275-3.01l3.078-17.129a2.956,2.956,0,0,0-.16-1.618,3.01,3.01,0,0,0-.994-1.3l-11.408-8.654a3,3,0,0,1-1.118-3.084,3.068,3.068,0,0,1,2.393-2.284l14.66-2.965a3.141,3.141,0,0,0,1.281-.578,3.044,3.044,0,0,0,.885-1.072l7.918-16.013a3.133,3.133,0,0,1,5.587,0Z" id="rating" transform="translate(-629.938 -210)"></path></g></svg>
+                            </span>
+                            <a href="#" class="reviews">100+ Reviews</a>
+                        </div>
+                        <div class="price-container">
+                            <sup>$</sup><span class="price">10</span><sup>99</sup><sub>/mo</sub>
+                        </div>
+                        <table class="rent-table">
+                            <tr>
+                            <td>Available</td>
+                            <td>Aug 1, 2023</td>
+                            </tr>
+                            <tr>
+                            <td>Storage</td>
+                            <td>12 GB RAM | 256 GB ROM</td>
+                            </tr>
+                            <tr>
+                            <td>Color</td>
+                            <td>Green</td>
+                            </tr>
+                            <tr>
+                                <td>In the box</td>
+                                <td>Handset, Ejection Pin, Data Cable, Quick Start Guide</td>
+                            </tr>
+                            <tr>
+                            <td>Seller</td>
+                            <td>
+                                <div class="owner">
+                                    <img class="owner-img" src="../../img/products/owner1.jpg">
+                                    <div class="owner-details">
+                                        <div style="color: var(--primary-purple);"><b>Shivani Sehgal</b></div>
+                                        <div>Rented 10+ Products</div>
+                                    </div>
+                                </div>
+                            </td>
+                            </tr>
+                        </table>
+                        <div class="product-description">
+                            <div class="heading">
+                                Description:
+                            </div>
+                            <article>
+                                The first Galaxy S with embedded S Pen. Write comfortably like pen on paper, 
+                                turn quick notes into legible text and use Air Actions to control your phone remotely. 
+                                Improved latency in Samsung Notes makes every pen stroke feel as natural as ink on 
+                                paper - and you can convert those hastily written ideas into legible text.5G Ready 
+                                powered by Galaxy�s first 4nm processor. Our fastest, most powerful chip ever. 
+                                That means, a faster CPU and GPU compared to Galaxy S21 Ultra. It�s an epic leap 
+                                for smartphone technology. The Dynamic AMOLED 2x display improves outdoor visibility 
+                                with up to 1750 Nits in peak brightness. And the 120Hz adaptive refresh rate keeps the 
+                                scroll smooth, adjusting to what's on screen for an optimized view. Our most advanced 
+                                Pro-grade Camera yet, packing the power of a professional's kit in one handheld device. 
+                                Also lets you make your nights epic with Nightography: The sensor pulls in more light, the Super 
+                                Clear Lens tones down lens flare, and fast-acting AI delivers near-instant intelligent processing.
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;SHIRAPAM 2023</p>    
+    </footer>
+</body>
+</html>
