@@ -1,5 +1,6 @@
 :root{
     --primary-silver: #bdc3c7;
+    --secondary-silver: #dee1e3;
     --primary-purple: #8e44ad;
     --body-background: #ecf0f1;
     --primary-purple-lighter: #9b59b6;
@@ -74,6 +75,21 @@ main{
     background-position: center;
     background-size: cover;
 }
+.secondary-btn{
+    background-color: white;
+    color: var(--primary-purple);
+    padding: 1vw 1.5rem !important;
+    border-radius: 5px;
+    border: 1px solid var(--primary-purple);
+    font-weight: bold;
+    font-size:1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.secondary-btn:hover{
+    background-color: var(--secondary-silver);
+}
 #mobile-nav{
     display: flex;
     justify-content: center;
@@ -104,6 +120,42 @@ main{
     background-color: var(--primary-purple-lighter);
     color: var(--primary-purple);
 }
+.border-btn{
+    border: 1px solid var(--primary-purple);
+    color: var(--primary-purple);
+}
+.rating {
+    cursor: pointer;
+}
+.reviews {
+    font-size: 0.8rem;
+}
+.price-container{
+    color: var(--primary-purple-darker);
+    line-height: 1;
+}
+.price {
+    font-weight: bold;
+    font-size: 2rem;
+}
+.owner .owner-details {
+    padding: 4px 6px;
+}
+.owner-img {
+    border-radius: 50%;
+    width: 13%;
+    height: 13%;
+}
+.owner-details div {
+    padding: 0px;
+    font-size: x-small;
+}
+sup {
+    vertical-align: top;
+}
+footer{
+    position: relative;
+    bottom: 0;
 
 footer{ 
     width: 100%;
