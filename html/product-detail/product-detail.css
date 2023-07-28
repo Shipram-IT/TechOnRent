@@ -1,0 +1,92 @@
+/* AUTHOR: SHIVANI SEHGAL | JULY 14, 2023 */
+
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    display: flex;
+}
+
+h2 {
+    margin: 0;
+}
+
+a {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    width: 40%;
+}
+
+.right {
+    width: 57%;
+}
+
+.product-image{
+    width: 100%;
+    max-height: 350px;
+    display: block;
+    border-radius: 5px;
+}
+
+.buttons-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.buttons-wrapper div {
+    width: 37%;
+    
+}
+
+.primary-btn:hover {
+    background-image: none;
+    color: white;
+}
+
+.card-content {
+    text-align: left;
+    padding: 0 10px;
+}
+
+.reviews {
+    margin: 0 5px;
+}
+
+.price-container {
+    margin: 10px 0;
+}
+
+.owner {
+    display: flex;
+    align-items: center;
+}
+
+.owner-img {
+    width: 10%;
+    height: 10%;
+}
+
+.product-description {
+    margin: 20px 0;
+}
+
+.product-description .heading {
+    color: var(--primary-purple-lighter);
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+article {
+    font-size: smaller;
+}
