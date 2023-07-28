@@ -153,15 +153,25 @@ main{
 sup {
     vertical-align: top;
 }
-footer{
-    position: relative;
-    bottom: 0;
 
 footer{ 
     width: 100%;
     text-align: center;
     font-weight: bold;
     color: var(--primary-purple);
+}
+.footer {
+    padding: 2rem;
+    display: flex;
+    color: white;
+    background-color:var(--primary-purple-darker);
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.footer div {
+    text-align: center;
 }
 
 @media only screen and (min-width: 481px) {
