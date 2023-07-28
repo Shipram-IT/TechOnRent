@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link href='https://fonts.googleapis.com/css?family=League Gothic' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+</head>
+
+<body>
+    <!-- navbar for web and tab version -->
+    <nav id="navbar">
+        <a href=""><img src="./img/logo.png" alt="TechOnRent" id="logo" class="flex-item"></a>
+        <a href="./html/categories.html" class="web-only-element flex-item">Categories</a>
+        <a href="./html/about-us.html" class="web-only-element flex-item">About Us</a>
+        <a href="./html/contact-us.html" class="web-only-element flex-item">Contact Us</a>
+        <a id="profile-btn" href="./html/profile.html" class="primary-btn web-only-element">Profile</a>
+    </nav>
+    <!-- navbar for mobile version -->
+    <nav id="mobile-nav">
+        <a href="./html/categories.html">Categories</a><span class="separator"></span>
+        <a href="./html/about-us.html">About Us</a><span class="separator"></span>
+        <a href="./html/contact-us.html">Contact Us</a><span class="separator"></span>
+        <a href="./html/profile.html">Profile</a>
+    </nav>
+    <main>
+        <!-- banner section for the homepage -->
+        <section id="banner-section">
+            <img src="./img/home/pexels-cottonbro-studio-5185150.jpg" alt="banner" id="banner">
+            <div id="banner-text">
+                <h1>Tech On Rent</h1>
+                <h4>
+                    <pre>M A K I N G   T E C H   A F F O R D A B L E</pre>
+                </h4> <!-- using pre to keep the design of gaps -->
+            </div>
+        </section>
+        <!-- section to show the top categories -->
+        <section>
+            <h1>Top Categories</h1>
+            <!-- flex containers for containing the flex item to manage responsiveness -->
+            <div class="flex-container">
+                <div class="item flex-content">
+                    <a href="./html/product-list.html">
+                        <img src="./img/home/pexels-craig-dennis-205421.jpg" alt="">
+                        <!-- overlay for hover affect. will activate it in css on hover  -->
+                        <div class="overlay">
+                            <div class="text">
+                                <h3 class="cat-name">Computer</h3>
+                            </div>
+                        </div>
+                        <div class="topright">
+                            <h5 class="cat-name">Computer</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="item flex-content">
+                    <a href="./html/product-list.html">
+                        <img src="./img/home/pexels-jill-burrow-6858618.jpg" alt="">
+                        <div class="overlay">
+                            <div class="text">
+                                <h3 class="cat-name">Cellphones</h3>
+                            </div>
+                        </div>
+                        <div class="topright">
+                            <h5 class="cat-name">Cellphones</h5>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="item flex-content">
+                    <a href="./html/product-list.html">
+                        <img src="./img/home/pexels-alex-andrews-1983037.jpg" alt="">
+                        <div class="overlay">
+                            <div class="text">
+                                <h3 class="cat-name">Cameras</h3>
+                            </div>
+                        </div>
+                        <div class="topright">
+                            <h5 class="cat-name">Cameras</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="item flex-content">
+                    <a href="./html/product-list.html">
+                        <img class="item-image" src="./img/home/pexels-sound-on-3394651.jpg" alt="">
+                        <div class="overlay">
+                            <div class="text">
+                                <h3 class="cat-name">Audio & Music</h3>
+                            </div>
+                        </div>
+                        <div class="topright">
+                            <h5 class="cat-name">Audio & Music</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="flex-container">
+            <div class="number-container  flex-content">
+                <h3><span class="number">5</span>
+                    Users</h3>
+            </div>
+            <div class="number-container  flex-content">
+                <h3><span class="number">4</span>
+                    products</h3>
+            </div>
+            <div class="number-container  flex-content">
+                <h3><span class="number">4</span>
+                    categories</h3>
+            </div>
+        </section>
+        <section>
+            <h1>Top Products</h1>
+            <div class="flex-container">
+                <div class="product-container  flex-content">
+                    <a href="" class="product-link">
+                        <img src="./img/products/galaxy.jpg" alt="phone" class="product-image">
+                        <div class="product-description">
+                            <h4 class="product-title">Samsung Galaxy S22 Ultra<span
+                                    class="product-price">$10/mo</span></span></h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia corrupti ducimus, omnis
+                                dolorum eveniet reprehenderit....</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-container  flex-content">
+                    <a href="" class="product-link">
+                        <img src="./img/products/pexels-olena-bohovyk-12021852.jpg" alt="phone"
+                            class="product-image">
+                        <div class="product-description">
+                            <h4 class="product-title">Sony Bluetooth Speaker<span
+                                    class="product-price">$10/mo</span></span></h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia corrupti ducimus, omnis
+                                dolorum eveniet reprehenderit....</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-container  flex-content">
+                    <a href="" class="product-link">
+                        <img src="./img/products/pexels-vincent-rivaud-2295287.jpg" alt="phone"
+                            class="product-image">
+                        <div class="product-description">
+                            <h4 class="product-title">Macbook Air (2018 Edition)<span
+                                    class="product-price">$15/mo</span></span></h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia corrupti ducimus, omnis
+                                dolorum eveniet reprehenderit....</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- article element for a small description of what this website does -->
+        <article>
+            <p>
+                <span class="company-name">Tech On Rent</span> is a peer to peer connection platform that allows its
+                users to rent any kind of gadget for using. It saves the users from spending a lot for any urgent need
+                of any tools like Laptop, Mobile in any case of emergency.
+                <br><a href="./html/about-us.html">More about the platform here</a>
+            </p>
+        </article>
+        <!-- partner section with some demo partner logo -->
+        <section id="partner">
+            <h1>our partners</h1>
+            <div id="partner-logo-container">
+                <span> <img src="./img/logo.png" class="partner-logo" alt=""></span>
+                <span> <img src="./img/logo.png" class="partner-logo" alt=""></span>
+                <span> <img src="./img/logo.png" class="partner-logo" alt=""></span>
+                <span> <img src="./img/logo.png" class="partner-logo" alt=""></span>
+                <span> <img src="./img/logo.png" class="partner-logo" alt=""></span>
+                <span> <img src="./img/logo.png" class="partner-logo" alt=""></span>
+                <span> <img src="./img/logo.png" class="partner-logo" alt=""></span>
+                <span> <img src="./img/logo.png" class="partner-logo" alt=""></span>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="flex-container">
+            <div>
+                <ul>
+                    <h2>Useful Links</h2>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Profile</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Newsletter</h2>
+                <form>
+                    <input type="text" placeholder="Your Email Adress">
+                    <br>
+                    <button class="primary-btn">Subscribe Now</button>
+                </form>
+            </div>
+
+            <div>
+                <h2>Contact Address</h2>
+                <p>Lambton College<br>279 Yorkland Blvd,Toronto, ON</p>
+            </div>
+
+        </div>
+
+        <div id="copyright">
+            <p>&copy;SHIRAPAM 2023</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>

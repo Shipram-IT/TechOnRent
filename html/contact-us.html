@@ -10,8 +10,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="./contact.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contact-us.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 	<title>Tech On Rent - Contact US</title>
 
@@ -19,18 +19,18 @@
 <body>
 	<!-- NAV BAR -->
      <nav id="navbar">
-        <a href="../home/index.html"><img src="../../img/logo.png" alt="TechOnRent" id="logo" class="flex-item"></a>
-        <a href="../categories/index.html" class="web-only-element flex-item">Categories</a>
-        <a href="../about-us/index.html" class="web-only-element flex-item">About Us</a>
+        <a href="./../index.html"><img src="../img/logo.png" alt="TechOnRent" id="logo" class="flex-item"></a>
+        <a href="./categories.html" class="web-only-element flex-item">Categories</a>
+        <a href="./about-us.html" class="web-only-element flex-item">About Us</a>
         <a href="" class="web-only-element flex-item activated">Contact Us</a>
-        <a id="profile-btn" href="../profile/index.html" class="primary-btn web-only-element">Profile</a> 
+        <a id="profile-btn" href="./profile.html" class="primary-btn web-only-element">Profile</a> 
     </nav>
     <!--Alternate NAV-->
     <nav id="mobile-nav">
-        <a href="../categories/index.html" >Categories</a><span class="separator"></span>
-        <a href="../about-us/index.html" >About Us</a><span class="separator"></span>
+        <a href="./categories.html" >Categories</a><span class="separator"></span>
+        <a href="./about-us.html" >About Us</a><span class="separator"></span>
         <a href="" class="activated">Contact Us</a><span class="separator"></span>
-        <a href="../profile/index.html">Profile</a> 
+        <a href="./profile.html">Profile</a> 
     </nav>
     <!-- Main content-->
         <main>
@@ -128,7 +128,36 @@
         </main>
 
         <footer>
-            <p>&copy;SHIRAPAM 2023</p>    
+            <div class="flex-container">
+                <div>
+                    <ul>
+                        <h2>Useful Links</h2>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Profile</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Newsletter</h2>
+                    <form>
+                        <input type="text" placeholder="Your Email Adress">
+                        <br>
+                        <button class="primary-btn">Subscribe Now</button>
+                    </form>
+                </div>
+    
+                <div>
+                    <h2>Contact Address</h2>
+                    <p>Lambton College<br>279 Yorkland Blvd,Toronto, ON</p>
+                </div>
+    
+            </div>
+    
+            <div id="copyright">
+                <p>&copy;SHIRAPAM 2023</p>
+            </div>
+    
         </footer>
 
 </body>
