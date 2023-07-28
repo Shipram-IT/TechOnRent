@@ -49,6 +49,9 @@ main{
 
 
 /*Form Styles*/
+.form-element-container{
+    margin-bottom: 1em;
+}
 select, input {
     box-sizing: border-box;
     width: 100%;
@@ -95,17 +98,16 @@ label{
 
 .item-details{
     padding: 0 0 0 1em;
-
 }
+
 .item-details-container{
-    
     text-align: left;
 }
+
 .flex-image{
     max-width: 20%;
     height: min-content;
-    padding: .25em;
-    
+    padding: .25em;    
 }
 
 .heading{
@@ -118,6 +120,11 @@ label{
     color: black;
     text-align: justify;
     text-justify: inter-word;
+}
+
+.item-details p{
+    text-align: justify;
+    padding-right: 1em;
 }
 
 /*End of the Items list Section*/
