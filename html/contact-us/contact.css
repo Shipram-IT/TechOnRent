@@ -1,3 +1,4 @@
+/*Main Content Container - FLEX*/
 .flex-container {
     display: flex;
     flex-direction: row;
@@ -22,11 +23,10 @@
     padding: 10px;
     text-shadow: 1px 1px 2px black;
 }
-
 /*End of Banner Section*/
 
 
-/*Static Information container and Form Container*/
+/*Static Information Container*/
 .flex-item-left {
     color: white;
     padding: 10px;
@@ -36,8 +36,9 @@
 
 table{
     text-align: left;
-    width: 100%;
-    padding-left: 2rem;
+    padding: 2em 0 2em 0;
+    padding-top: 1rem;
+    margin: auto;
 }
 table th{
     vertical-align: top;
@@ -53,12 +54,11 @@ table a{
 
 svg{
     fill:white;
-    /* margin: 15px; */
 }
-.icon-link{
-    margin: 20px;
-}
+/*End of Static Information Container*/
 
+
+/*Form Container and Form Styles*/
 .flex-item-right {
     color: var(--primary-purple-darker);
     padding: 10px;
@@ -66,10 +66,7 @@ svg{
     background-color: var(--primary-silver);
     background-image: linear-gradient(to bottom, var(--primary-silver), var(--body-background));
 }
-/*End of Static Information container and Form Container*/
 
-
-/*Form Styles*/
 textarea, select, input {
     box-sizing: border-box;
     width: 100%;
@@ -89,16 +86,14 @@ label{
     padding: 10px 0px 0px 5px;
     float: left;
 }
-/*End of form styles*/
+/*End of Form Container and Form Styles*/
 
 /*Map section*/
 #map{
     width: 100%;
-    /* height: 50%; */
     /*border: solid var(--primary-purple);
     border-radius: 30px;*/
     border: none;
-    border-width: 1px;
 }
 
 #map-container{
@@ -131,23 +126,41 @@ label{
     }
 }
 
-/*
+/*tablet viewport*/
 @media screen and (max-width: 768px) and (min-width: 481px){
-    .flex-container {
-    }
-}
-*/
-
-@media screen and (min-width: 769px){
-    .flex-container {
-        
-    }
-
     .flex-item-left {
-        width: 40%;
+        width: 50%;
     }
 
     .flex-item-right {
+        width: 50%;
+    }
+    /*adjusting the behaviour of the parent css for the NAV*/
+    #navbar {
+        flex-direction: column;
+    }
+    .web-only-element{
+        visibility: hidden;
+        position: absolute;
+    }
+    #mobile-nav{
+        visibility: visible;
+    }
+    footer{
+        padding-bottom:2rem;
+    }
+}
+
+/*desktop viewport*/
+@media screen and (min-width: 769px){
+    .flex-item-left {
+        width: 40%;
+    }
+    .flex-item-right {
         width: 60%;
     }
+
+    #map{
+        height: 400px; /*fixed height, responsiveness is inserted in the width*/
+      }
 }

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<!--AUTHORS: 
+        Olumayowa Mosuro - c0891502
+        Paulo Massao Kawakami - c0893926
+        Rafaeatul Kabir - c0888535
+        Shivani Sehgal - c0893209
+    DATE: JULY 27, 2023 -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="./checkout.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+	<title>Tech On Rent - Order Checkout</title>
+
+</head>
+<body>
+    <!--page header -logo only-->
+    <header style="text-align: center;">
+        <img src="../../img/logo.png" alt="TechOnRent" id="logo" class="flex-item">
+    </header>
+    <!-- No NAV bar. The user must finish the purchase or cancel it-->
+
+    <main>
+        <!--Banner of the page-->
+        <div id="banner-container">
+            <h1 id="banner-text">Checkout</h1>
+        </div>
+
+        <!--General container-->
+        <div class="flex-container"> 
+            <!--SELECTED PRODUCT CONTAINER-->
+            <div class="flex-item-left">
+                <h3>Product List</h3>
+               
+                <!--PRODUCT LIST-->
+                <div class="item-container">
+
+                    <!--PRODUCT ONE-->
+                    <div class="item-details-container">
+                        <h4>Samsung Galaxy S22 Ultra</h4>
+                        <div class="item-container-elements">
+                            <img class="flex-image" src="../../img/products/galaxy.jpg" alt="productimage1" id="prod1">
+                            <div class="item-details">
+                                <p> 
+                                    <span class="heading">product description</span><br>
+                                    <span class="general-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
+                                    Curabitur egestas.</span>
+                                </p>
+                                <div class="item-container-elements"> 
+                                <p style="text-align: left; margin-right: 2em;">
+                                    <span class="heading">Qtd.</span>
+                                    <br>60 days
+                                </p>
+                                <p style="text-align: left;"> 
+                                    <span class="heading">Price</span>
+                                    <br>$20.00
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    
+                    <!--PRODUCT TWO-->
+                    <div class="item-details-container">
+                        <h4>Samsung Galaxy S22 Ultra</h4>
+                        <div class="item-container-elements">
+                            <img class="flex-image" src="../../img/products/galaxy.jpg" alt="productimage1" id="prod1">
+                            <div class="item-details">
+                                <p> 
+                                    <span class="heading">product description</span><br>
+                                    <span class="general-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
+                                    Curabitur egestas.</span>
+                                </p>
+                                <div class="item-container-elements"> 
+                                <p style="text-align: left; margin-right: 2em;">
+                                    <span class="heading">Qtd.</span>
+                                    <br>60 days
+                                </p>
+                                <p style="text-align: left;"> 
+                                    <span class="heading">Price</span>
+                                    <br>$20.00
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--PRODUCT THREE-->
+                    <div class="item-details-container">
+                        <h4>Samsung Galaxy S22 Ultra</h4>
+                        <div class="item-container-elements">
+                            <img class="flex-image" src="../../img/products/galaxy.jpg" alt="productimage1" id="prod1">
+                            <div class="item-details">
+                                <p> 
+                                    <span class="heading">product description</span><br>
+                                    <span class="general-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
+                                    Curabitur egestas.</span>
+                                </p>
+                                <div class="item-container-elements"> 
+                                <p style="text-align: left; margin-right: 2em;">
+                                    <span class="heading">Qtd.</span>
+                                    <br>60 days
+                                </p>
+                                <p style="text-align: left;"> 
+                                    <span class="heading">Price</span>
+                                    <br>$20.00
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+
+                </div>
+            </div>
+
+            <!-- PAYMENT CONTAINER-->
+            <div class="flex-item-right" style="background-color: black;">
+                <h3>Payment details</h3>
+                <!-- PAYMENT FORM -->
+                <form>
+                    <label for="name">Cardholder Name:</label>
+                    <input type="text" id="name" name="name" required><br>
+
+                    <label for="credicard">Credit Card:</label>
+                    <input type="text" id="credicard" name="credicard" size="16" pattern="[0-9]{16}" placeholder="0000000000000000"><br>
+                    
+                    <div class="flex-form-container">
+                        <div class="flex-form-element" >
+                            <label for="exp_date">Exp. Date: </label>
+                            <input type="text" id="exp_date" name="exp_date" pattern="[0-9]{2}/[0-9]{2}" placeholder="MM/YY" required><br>
+                        </div>
+                        
+                        <div class="flex-form-element" >
+                            <label for="cvv">CVV:</label>
+                            <input type="text" id="cvv" name="cvv" pattern="[0-9]{3}" placeholder="999" required><br>
+                        </div>
+                    </div>
+                    
+                    <!--Showing Totals after payment details-->
+                    <div id="totals-container">
+                        <p> <span class="heading-alternate">Total products</span><br>$10.00</p>
+                        <p> <span class="heading-alternate">Tax</span><br>$10.00</p>
+                        <p> <span class="heading-alternate">Total + Tax</span><br>$10.00</p>
+                    </div>  
+
+                    <!--Button to confirm payment-->
+                    <input type="submit" value="Submit" class="primary-btn" style="margin-top: 2.5em; margin-bottom: 2.5em;">
+                </form>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+        <p>&copy;SHIRAPAM 2023</p>    
+    </footer>
+
+</body>
+</html>
