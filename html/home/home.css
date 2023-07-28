@@ -1,9 +1,3 @@
-/* body{
-    margin: 0;
-}
-#navbar{
-    margin: 8px 1.2rem;
-} */
 section{
     width: 100%;
 }
@@ -12,12 +6,13 @@ img{
     display: block;
 }
 #banner{
-    
     margin-top: 1rem;
 }
+/* making banner section relative to position the texts in corner as absolute */
 #banner-section{
     position: relative;
 }
+/* making the texts absolute to the relative container to make them sit in corner */
 #banner-text{
     position: absolute;
     bottom: 1rem;
@@ -28,6 +23,7 @@ h1, h2, h3{
     text-transform: uppercase;
     color: var(--primary-purple);
 }
+/* adding logo's font family here to make the name look like logo */
 .company-name{
     font-family: 'League Gothic';
     color: var(--primary-purple);
@@ -45,6 +41,7 @@ h1, h2, h3{
     text-align: center;
     margin: 0;
 }
+/* making the subtext look like logo's subtext by changing the font family */
 #banner-text h4{
     font-family: 'Raleway';
     color: var(--primary-purple);
@@ -53,12 +50,14 @@ h1, h2, h3{
     font-size: 1.5vw;
 
 }
+/* animation */
 #banner-text h4 {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid var(--primary-purple); /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     
+    /* animation style */
     animation: 
       typing 3.5s steps(40, end),
       blink-caret .75s step-end infinite;
@@ -84,7 +83,7 @@ h1{
 .flex-container{
     align-items: center;
     justify-content: center;
-    display: flex;
+    display: flex; /*making display flex for responsiveness management*/
     flex-wrap: wrap;   
 }
 .flex-content{
@@ -95,7 +94,7 @@ h1{
 .item{
     position: relative;
 }
-
+/* overlay effect that will have opacity and be seen when hovering over the images */
 .overlay {
     position: absolute;
     top: 0;
@@ -109,6 +108,7 @@ h1{
     background-color: var(--primary-purple);
     
 }
+/* making the cursor look like link and giving a little opacity for the hover effect */
 .item:hover .overlay {
     opacity: 0.9;
     cursor: pointer;
@@ -116,12 +116,10 @@ h1{
 .text {
     color: var(--primary-silver);
     position: absolute;
-    top: 50%;
+    /* making the text center. using percentage as it is absolute */
+    top: 50%; 
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    text-align: center;
     font-weight: bold;
 }
 
@@ -149,7 +147,7 @@ h1{
 .product-container:hover{
     background-color: var(--primary-silver);
 }
-
+/* topright class for the names to set at corner when in tab and mobile mode. as hover don't work there */
 .topright {
     position: absolute;
     top: 0;
@@ -163,7 +161,7 @@ h1{
     text-align: left;
     padding: 0px 2px;
 }
-.price{
+.product-price{
     float: right;
     color: var(--primary-purple);
 }
@@ -188,18 +186,20 @@ article{
     text-align: center;
 }
 article a{
-    text-transform: uppercase;
+    text-transform: capitalize;
     color: var(--primary-purple);
     font-weight: bold;
     text-decoration: none;
 }
 
 @media screen and (min-width: 769px) {
+    /* making the article have more margin in desktop mode */
     article{
         margin: 4em;
     }
 }
 @media (min-width: 0) and (max-width: 480px) {
+    /* making the flex items in column mode for mobile screen */
     .flex-container {
         flex-direction: column;
     }
@@ -208,10 +208,12 @@ article a{
 
 @media (min-width: 481px) and (max-width: 768px) {
     .flex-content{
-        flex: 0 0 50%;
+        /* flex grow 0, flex shrink 0 and flex basis 50%, making the flex items each taking 50% for tab mode */
+        flex: 0 0 50%; 
     }
 }
 @media only screen and (max-width: 768px) {
+    /* hiding the overlay affects as hover won't work in tab and mobile mode, and making the top right corner area visible  */
     .topright{
         visibility: visible;
     }

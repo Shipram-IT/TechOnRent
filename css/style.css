@@ -1,3 +1,4 @@
+/* declaring all the colors of the website as variables */
 :root{
     --primary-silver: #bdc3c7;
     --secondary-silver: #dee1e3;
@@ -29,7 +30,6 @@ main{
 #navbar{
     display: flex;
     align-items: center;
-    color: var(--primary-purple);
     font-weight: bold; 
     flex-direction: row;
     justify-content: space-evenly;
@@ -41,6 +41,7 @@ main{
 
 #navbar a{
     text-decoration: none;
+    color: var(--primary-purple);
     font-size: 1rem;
     padding: 0.2rem 0.5rem;
     text-transform: uppercase;
@@ -61,8 +62,8 @@ main{
 }
 .primary-btn{
     background-color: var(--primary-purple);
-    color: white;
-    padding: 1vw 1.5rem !important;
+    color: white !important; /* adding important to ignore any overlapping design */
+    padding: 1rem 1.5rem !important;
     border-radius: 5px;
     border: none;
     font-weight: bold;
@@ -70,11 +71,11 @@ main{
     text-decoration: none;
     text-transform: uppercase;
 }
-.primary-btn:hover{
+/* .primary-btn:hover{
     background-image: url("../img/cursor-bg.png");
     background-position: center;
     background-size: cover;
-}
+} */
 .secondary-btn{
     background-color: white;
     color: var(--primary-purple);
@@ -117,8 +118,7 @@ main{
 }
 .primary-btn:hover{
     cursor: pointer;    
-    background-color: var(--primary-purple-lighter);
-    color: var(--primary-purple);
+    background-color: var(--primary-purple-darker);
 }
 .border-btn{
     border: 1px solid var(--primary-purple);
@@ -153,25 +153,45 @@ main{
 sup {
     vertical-align: top;
 }
-
-footer{ 
-    width: 100%;
-    text-align: center;
-    font-weight: bold;
-    color: var(--primary-purple);
-}
-.footer {
-    padding: 2rem;
-    display: flex;
+footer h2{
     color: white;
-    background-color:var(--primary-purple-darker);
-    align-items: center;
-    justify-content: space-evenly;
+}
+footer input{
+    margin-bottom: 1em;
+    padding: 1em;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+}
+footer input:focus-visible{
+    outline-color: var(--primary-purple);
+}
+footer a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--primary-purple-darker);
+}
+footer ul{
+    list-style-type: none;
+    padding-inline-start: 0; /*to remove the default left padding*/   
+}
+footer .flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: first baseline;
+    background-color: var(--primary-purple-lighter);
+    padding:0 0 1rem;
+    color: var(--primary-purple-darker);
+}
+footer .flex-container div{
+    flex: 1;
+    text-align: center;
 }
 
-
-.footer div {
+#copyright{
     text-align: center;
+    color: var(--primary-purple);
+    font-weight: bold;
 }
 
 @media only screen and (min-width: 481px) {
@@ -183,6 +203,7 @@ footer{
         z-index: 1;
         background-color: var(--body-background);
     }
+
     main{
         padding-top: 4.5rem;
     }
