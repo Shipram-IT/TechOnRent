@@ -44,9 +44,11 @@ a {
     margin: 15px 0;
 }
 
-.buttons-wrapper div {
-    width: 37%;
-    
+.buttons-wrapper a {
+    width: 35%;
+    text-align: center;
+    margin: 0;
+    font-size: 68%;
 }
 
 .primary-btn:hover {
@@ -89,4 +91,52 @@ a {
 
 article {
     font-size: smaller;
+    text-align: justify;
+}
+
+@media screen and (max-width: 1060px) {
+    .buttons-wrapper a {
+        font-size: 66%;
+        width: 29%;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 769px) {
+    .buttons-wrapper {
+        flex-direction: column;
+    }
+
+    .buttons-wrapper a {
+        font-size: 66%;
+        width: auto;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 8vw;
+    }
+
+    h2 {
+        font-size: 6vw;
+    }
+
+    .product-detail-wrapper {
+        flex-direction: column;
+    }
+
+    .left, .right {
+        width: auto;
+    }
+
+    .buttons-wrapper {
+        flex-direction: column;
+    }
+
+    .buttons-wrapper a {
+        font-size: 0.9rem;
+        width: auto;
+        margin-bottom: 10px;
+    }
 }
