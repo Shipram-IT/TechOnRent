@@ -28,6 +28,11 @@ h1, h2, h3{
     text-transform: uppercase;
     color: var(--primary-purple);
 }
+.company-name{
+    font-family: 'League Gothic';
+    color: var(--primary-purple);
+    font-size: 200%;
+}
 #banner-text h1{
     font-family: 'League Gothic';
     text-transform: capitalize;
@@ -177,11 +182,28 @@ h1{
 #partner-logo-container{
     text-align: center;
 }
+article{
+    margin: 2em;
+    font-size: 150%;
+    text-align: center;
+}
+article a{
+    text-transform: uppercase;
+    color: var(--primary-purple);
+    font-weight: bold;
+    text-decoration: none;
+}
 
+@media screen and (min-width: 769px) {
+    article{
+        margin: 4em;
+    }
+}
 @media (min-width: 0) and (max-width: 480px) {
     .flex-container {
         flex-direction: column;
     }
+    
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
