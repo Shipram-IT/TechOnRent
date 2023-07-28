@@ -38,6 +38,8 @@
             <div id="banner-container">
                 <h1 id="banner-text">Contact Us</h1>
             </div>
+
+            <!--Content container-->
             <div class="flex-container">
                 
                 <!-- CONTACT US INFORMATION CONTAINER-->
@@ -80,28 +82,38 @@
                 <div class="flex-item-right">
                     <h3>Send us a message</h3>
                     <form action="../home/index.html" method="get">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required placeholder="Your Name"><br>
+                        <div class="form-element-container">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required placeholder="Your Name">
+                        </div>
+                        
+                        <div class="form-element-container">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required placeholder="myemail@domain.com">
+                        </div>
 
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required placeholder="myemail@domain.com"><br>
+                        <div class="form-element-container">
+                            <label for="phone">Phone: </label>
+                            <input type="tel" id="phone" name="phone" required placeholder="000-333-4444"  pattern="[0-9]{3}-?\s?[0-9]{3}-?\s?[0-9]{4}"><br>
+                            <!--the REGEX above allows dashes or space (- or " ") between the numbers, but they are optional-->
+                        </div>
+                        
+                        <div class="form-element-container">
+                            <label for="reason">Contact Reason:</label>
+                            <select name="reason" id="reason">
+                                <option value="support">I need support and&#47;or assistance</option>
+                                <option value="finance">Financial issues</option>
+                                <option value="information">Ask for information</option>
+                                <option value="complaint">Register a complaint</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
 
-                        <label for="phone">Phone: </label>
-                        <input type="tel" id="phone" name="phone" required placeholder="000-333-4444"  pattern="[0-9]{3}-?\s?[0-9]{3}-?\s?[0-9]{4}"><br>
-                        <!--the REGEX above allows dashes or space (- or " ") between the numbers, but they are optional-->
-
-                        <label for="reason">Contact Reason:</label>
-                        <select name="reason" id="reason">
-                          <option value="support">I need support and&#47;or assistance</option>
-                          <option value="finance">Financial issues</option>
-                          <option value="information">Ask for information</option>
-                          <option value="complaint">Register a complaint</option>
-                          <option value="other">Other</option>
-                        </select><br>
-
-                        <label>Message:</label>
-                        <textarea name="message" id="message" rows="5" required placeholder="Write your message here"></textarea><br><br>
-                        <input type="submit" value="Submit" class="primary-btn">
+                        <div class="form-element-container">
+                            <label>Message:</label>
+                            <textarea name="message" id="message" rows="5" required placeholder="Write your message here"></textarea><br><br>
+                            <input type="submit" value="Submit" class="primary-btn">
+                        </div>
                     </form>
                 </div>
 

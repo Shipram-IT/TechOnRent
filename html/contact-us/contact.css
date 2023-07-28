@@ -59,6 +59,10 @@ svg{
 
 
 /*Form Container and Form Styles*/
+.form-element-container{
+    margin-botton: 1em;
+}
+
 .flex-item-right {
     color: var(--primary-purple-darker);
     padding: 10px;
