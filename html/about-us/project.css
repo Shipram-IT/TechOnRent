@@ -1,4 +1,4 @@
-
+/* Header properties and values */
 #about-us-header{
     background-color: var(--primary-purple);
     color: white;
@@ -12,6 +12,7 @@
     text-align: center;
     padding: 1rem;
 }
+/* Flex container details for the teams*/
 .flex-container-team, .flex-container-team-reverse{
     display: flex;
     align-items: center;
