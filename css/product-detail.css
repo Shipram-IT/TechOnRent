@@ -1,4 +1,5 @@
-/* AUTHOR: SHIVANI SEHGAL | JULY 14, 2023 */
+/* Authors: Olumayowa Mosuro | Paulo Massao Kawakami | Rafaeatul Kabir | Shivani Sehgal */
+/* DATE: August 1, 2023 */
 
 main {
     width: 80%;
@@ -31,6 +32,7 @@ a {
     width: 57%;
 }
 
+/* Styles for product image */
 .product-image{
     width: 100%;
     max-height: 350px;
@@ -38,6 +40,7 @@ a {
     border-radius: 5px;
 }
 
+/* Styles for buttons container */
 .buttons-wrapper {
     display: flex;
     justify-content: space-between;
@@ -56,6 +59,7 @@ a {
     color: white;
 }
 
+/* Styles for product card content */
 .card-content {
     text-align: left;
     padding: 0 10px;
@@ -69,6 +73,7 @@ a {
     margin: 10px 0;
 }
 
+/* Styles for owner details */
 .owner {
     display: flex;
     align-items: center;
@@ -79,6 +84,7 @@ a {
     height: 10%;
 }
 
+/* Styles for product description */
 .product-description {
     margin: 20px 0;
 }
@@ -89,11 +95,13 @@ a {
     margin: 10px 0;
 }
 
-article {
+/* Styles for product summary */
+p {
     font-size: smaller;
     text-align: justify;
 }
 
+/* Media query for desktop screen widths less than 1060px */
 @media screen and (max-width: 1060px) {
     .buttons-wrapper a {
         font-size: 66%;
@@ -101,11 +109,14 @@ article {
     }
 }
 
-@media screen and (min-width: 481px) and (max-width: 769px) {
+/* Media query for tablet */
+@media screen and (max-width: 769px) and (min-width: 481px)  {
+    /* Show button in columns */
     .buttons-wrapper {
         flex-direction: column;
     }
 
+    /* Style for buttons on tablet */
     .buttons-wrapper a {
         font-size: 66%;
         width: auto;
@@ -113,6 +124,7 @@ article {
     }
 }
 
+/* Media query for mobile */
 @media screen and (max-width: 480px) {
     h1 {
         font-size: 8vw;
@@ -126,6 +138,7 @@ article {
         flex-direction: column;
     }
 
+    /* Full screen width for left and right container in mobile */
     .left, .right {
         width: auto;
     }
