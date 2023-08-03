@@ -36,30 +36,31 @@ main{
 /*Static Information container and Form Container*/
 .flex-item-left {
     color: var(--primary-purple-darker);
-    padding: .5em .5em 0 .5em;
-    background-color: var(--primary-silver);
-    background-image: linear-gradient(to bottom, var(--primary-silver), var(--body-background));
+    padding: 2rem;
+    /* background-color: var(--primary-silver);
+    background-image: linear-gradient(to bottom, var(--primary-silver), var(--body-background)); */
 }
 
 
 .flex-item-right {
     color: white;
-    padding: .5em .5em 0 .5em;
+    padding: 2rem;
     background-color: var(--primary-purple-darker);
-    background-image: linear-gradient(to right, black, var(--primary-purple-darker), black)
+    background-image: linear-gradient(to top, var(--primary-purple-darker), var(--primary-purple-lighter));
+    /* border-radius: 5px; */
+    
 }
 /*End of Static Information container and Form Container*/
 
 
 /*Form Styles*/
-select, input {
+.checkout-input {
     box-sizing: border-box;
     width: 100%;
     border-radius: 15px;
-    border-style: solid;
+    /* border-style: solid; */
     padding: 1em;
-    border-color: var(--primary-purple-darker);
-    border-width: .3em;
+    border: none;
 }
 .flex-form-container{
     display: flex;
@@ -73,9 +74,8 @@ select, input {
     width: 40% ;
     vertical-align: bottom;
 }
-input:focus, select:focus, textarea:focus {
-    border: .5em solid var(--primary-purple);
-    outline: none;
+.checkout-input:focus{
+    outline-color: var(--primary-purple);
 }
 
 label{
@@ -85,13 +85,13 @@ label{
 /*End of form styles*/
 
 /*Items list*/
-.item-container{
+/* .item-container{
     display: flex;
     padding: .25em;
     flex-wrap: wrap;
     flex-direction: column;
     border-style: groove;
-}
+} */
 .item-container-elements{
     display: flex;
 }

@@ -21,6 +21,7 @@ body{
 }
 main{
     min-height: 82vh;
+    margin-bottom: 1rem;
 }
 .section-header {
     text-align: center;
@@ -162,7 +163,7 @@ sup {
     vertical-align: top;
 }
 
-
+/* styles for footer section */
 #copyright{
     text-align: center;
     color: var(--primary-purple);
@@ -172,6 +173,10 @@ footer ul{
     list-style-type: none;
     padding-inline-start: 0; /*to remove the default left padding*/   
 }
+footer .flex-container{
+    background-color: var(--primary-purple-lighter);
+    color: var(--primary-purple-darker);
+}
 footer .flex-container div{
     text-align: center;
 }
@@ -179,6 +184,24 @@ footer a{
     text-decoration: none;
     font-weight: bold;
     color: var(--primary-purple-darker);
+}
+footer input{
+    margin-bottom: 1em;
+    padding: 1em;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+}
+footer input:focus-visible{
+    outline-color: var(--primary-purple);
+}
+footer h2{
+    color: white;
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    footer h2{
+        font-size: 1rem;
+    }
 }
 @media only screen and (min-width: 481px) {
     #navbar{
@@ -193,32 +216,20 @@ footer a{
     main{
         padding-top: 4.5rem;
     }
-    footer h2{
-        color: white;
-    }
-    footer input{
-        margin-bottom: 1em;
-        padding: 1em;
-        border-radius: 10px;
-        border: none;
-        text-align: center;
-    }
-    footer input:focus-visible{
-        outline-color: var(--primary-purple);
-    }
+    
+    
     
     
     footer .flex-container{
         display: flex;
-        flex-wrap: wrap;   
         justify-content: center;
-        align-items: first baseline;
-        background-color: var(--primary-purple-lighter);
-        padding:0 0 1rem;
-        color: var(--primary-purple-darker);
+        align-items: first baseline; /*to keep the content with the upperline/baseline*/  
+        padding-bottom: 1rem;
+        padding-right: 1rem;
+        
     }
     footer .flex-container div{
-        text-align: center;
+        flex: 1; /*ti make all the flex box same width so that it get centered properly*/
     }
 }
 @media (min-width: 0) and (max-width: 480px) {

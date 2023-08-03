@@ -2,61 +2,94 @@
 <!-- Authors: Olumayowa Mosuro | Paulo Massao Kawakami | Rafaeatul Kabir | Shivani Sehgal -->
 <!-- DATE: August 1, 2023 -->
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech On Rent - Categories</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/category.css">
+    <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="icon" type="image/x-icon" href="../img/favicon.png">
 </head>
+
 <body>
     <nav id="navbar">
         <a href="./../index.html"><img src="../img/logo.png" alt="TechOnRent" id="logo" class="flex-item"></a>
         <a href="./categories.html" class="web-only-element flex-item activated">Categories</a>
         <a href="./about-us.html" class="web-only-element flex-item">About Us</a>
         <a href="./contact-us.html" class="web-only-element flex-item">Contact Us</a>
-        <a id="profile-btn" href="./profile.html" class="primary-btn web-only-element">Profile</a> 
+        <a id="profile-btn" href="./profile.html" class="primary-btn web-only-element">Profile</a>
     </nav>
     <nav id="mobile-nav">
         <a href="./product-list.html" class="activated">Categories</a><span class="separator"></span>
-        <a href="./about-us.html" >About Us</a><span class="separator"></span>
-        <a href="./contact-us.html" >Contact Us</a><span class="separator"></span>
-        <a href="./profile.html">Profile</a> 
+        <a href="./about-us.html">About Us</a><span class="separator"></span>
+        <a href="./contact-us.html">Contact Us</a><span class="separator"></span>
+        <a href="./profile.html">Profile</a>
     </nav>
     <main>
         <section>
             <h1>Categories</h1>
-            <div class="item">
-                <a href="./product-list.html">
-                    <img src="../img/home/pexels-craig-dennis-205421.jpg" alt="">
-                    <div class="text"><h3 class="cat-name">Computer</h3></div>
-                </a>
-            </div>
-            
-            <div class="item">
-                <a href="./product-list.html">
-                    <img src="../img/home/pexels-jill-burrow-6858618.jpg" alt="">
-                    <div class="text"><h3 class="cat-name">Cellphones</h3></div>
-                </a>
-            </div>
-            <div class="item">
-                <a href="./product-list.html">
-                    <img src="../img/home/pexels-alex-andrews-1983037.jpg" alt="">
-                    <div class="text"><h3 class="cat-name">Cameras</h3></div>
-                    
-                </a>
-            </div>                
-            <div class="item">
-                <a href="./product-list.html">
-                    <img class="item-image" src="../img/home/pexels-sound-on-3394651.jpg" alt="">
-                    <div class="text"><h3 class="cat-name">Audio & Music</h3></div>
-                </a>
-            </div>
+
+            <div class="flex-container">
+                <div class="item flex-content">
+                    <a href="../html/product-list.html">
+                        <img src="../img/home/pexels-craig-dennis-205421.jpg" alt="">
+                        <!-- overlay for hover affect. will activate it in css on hover  -->
+                        <div class="overlay">
+                            <div class="text">
+                                <h3 class="cat-name">Computer</h3>
+                            </div>
+                        </div>
+                        <div class="topright">
+                            <h5 class="cat-name">Computer</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="item flex-content">
+                    <a href="../html/product-list.html">
+                        <img src="../img/home/pexels-jill-burrow-6858618.jpg" alt="">
+                        <div class="overlay">
+                            <div class="text">
+                                <h3 class="cat-name">Cellphones</h3>
+                            </div>
+                        </div>
+                        <div class="topright">
+                            <h5 class="cat-name">Cellphones</h5>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="item flex-content">
+                    <a href="../html/product-list.html">
+                        <img src="../img/home/pexels-alex-andrews-1983037.jpg" alt="">
+                        <div class="overlay">
+                            <div class="text">
+                                <h3 class="cat-name">Cameras</h3>
+                            </div>
+                        </div>
+                        <div class="topright">
+                            <h5 class="cat-name">Cameras</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="item flex-content">
+                    <a href="../html/product-list.html">
+                        <img class="item-image" src="../img/home/pexels-sound-on-3394651.jpg" alt="">
+                        <div class="overlay">
+                            <div class="text">
+                                <h3 class="cat-name">Audio & Music</h3>
+                            </div>
+                        </div>
+                        <div class="topright">
+                            <h5 class="cat-name">Audio & Music</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>    
         </section>
-        
+
     </main>
 
     <footer>
@@ -92,4 +125,5 @@
 
     </footer>
 </body>
+
 </html>
