@@ -1,11 +1,12 @@
 /* Authors: Olumayowa Mosuro | Paulo Massao Kawakami | Rafaeatul Kabir | Shivani Sehgal */
 /* DATE: August 1, 2023 */
 
+/* styles for the top 3 headers of this page */
 h1, h2, h3{
     text-transform: uppercase;
     color: var(--primary-purple);
 }
-
+/*styles for the flex container and its items*/
 .flex-container{
     justify-content: center;
     display: flex;
@@ -21,6 +22,9 @@ h1, h2, h3{
 .flex-right{
     flex: 60%;
 }
+/*end of flex container styles*/
+
+/* style for profile data section */
 #profile-pic{
     max-width: 20rem;
     border-radius: 100%;
@@ -56,12 +60,15 @@ h1, h2, h3{
     font-weight: bold;
     margin-left: 5px;
 }
+/* end of the styles of user data */
+/* style for card like container */
 .card{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 5px;
     padding: 0.5rem;
     text-align: center;
 }
+/*styles for elements isn the table*/
 .status{
     font-size: 70%;
     padding: 3px 10px;
@@ -88,12 +95,15 @@ h1, h2, h3{
     color: var(--primary-purple);
     padding-left: 5px;
 }
+/* end of element styles in the table */
 
+/* styles for both mobile and tab */
 @media (min-width: 0) and (max-width: 768px) {
     .flex-container {
         flex-direction: column;
     }
 }
+/* styles for tab */
 @media (min-width: 481px) and (max-width: 768px) {
     .flex-left{
         display: flex;

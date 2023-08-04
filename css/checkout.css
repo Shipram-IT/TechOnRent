@@ -46,7 +46,7 @@ main{
     color: white;
     padding: 2rem;
     background-color: var(--primary-purple-darker);
-    background-image: linear-gradient(to top, var(--primary-purple-darker), var(--primary-purple-lighter));
+    background-image: linear-gradient(to top7654esZ, var(--primary-purple-darker), var(--primary-purple-lighter));
     /* border-radius: 5px; */
     
 }
@@ -84,14 +84,7 @@ label{
 }
 /*End of form styles*/
 
-/*Items list*/
-/* .item-container{
-    display: flex;
-    padding: .25em;
-    flex-wrap: wrap;
-    flex-direction: column;
-    border-style: groove;
-} */
+/* item container and its contents' styles */
 .item-container-elements{
     display: flex;
 }

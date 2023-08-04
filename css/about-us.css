@@ -11,6 +11,11 @@
     box-shadow: 0 15px 20px 0 rgba(30, 1, 19, 0.2);
     justify-content: center;
 }
+/* changing display to flex for team container to keep control them as row and columns */
+.team-container{
+    display: flex;
+}
+/* css for vision section */
 #our-vision{
     text-align: center;
     padding: 1rem;
@@ -22,36 +27,36 @@
     flex: 50%;
     flex-direction: row;        
 }
-/* .flex-container-team {
-    
-} */
-
+/* making all the flex items 50% flex on team */
 .flex-item-team{
     flex: 50%;
     
 }
+/* style for team images */
 .flex-item-team img{
     max-width: 70%;
     border-radius: 100%;
     box-shadow: 0 15px 20px 0 rgba(30, 1, 19, 0.2);
 }
+/* style for vision flex item */
 .flex-item-vision{
     flex: 50%;
     padding: 1rem;
 }
+/* style for vision section image */
 .flex-item-vision img{
     width: 100%;
     height: auto;
     border-radius: 10px;
 }
-#our-vision .focus-text{
-    font-weight: bold;
-}
+/* style for the focus text that makes up the company name */
 .focus-text{
+    font-weight: bold;
+    font-size: 120%;
     color: var(--primary-purple);
 }
+/* style for card type container */
 .card{
-    
     border-radius: 5px;
     padding: 0.5rem;
     text-align: center;
@@ -59,45 +64,7 @@
     box-shadow: 0 15px 20px 0 rgba(30, 1, 19, 0.2);
 }
 
-
-.col-1{
-    text-align: center;
-    padding-inline-start: 0; /* to remove the default padding of ul */
-}
-.col-1 a {
-    text-decoration: none;
-    color:white;
-}
-.team-container{
-    display: flex;
-}
-ul {
-    list-style: none;
-}
-
-/* form input {
-    width: 100%;
-    height: 35px;
-    border-radius: 4px;
-    text-align: center;
-    margin-bottom: 1rem;
-    outline: none;
-    border: none;
-
-} */
-
-form button {
-    background: transparent;
-    border: 2px solid white;
-    color: white;
-    border-radius: 30px;
-    padding: 10px 30px;
-    font-size: 15px;
-    cursor: pointer;
-
-
-}
-
+/* styles for about us page in tablet */
 @media (min-width: 481px) and (max-width: 768px) {
     .team-container{
         flex-direction: column;
@@ -107,6 +74,7 @@ form button {
     }
     
 }
+/* styles for about us page in mobile */
 @media (max-width: 481px) {
     .flex-container-team,.flex-container-team-reverse {
         flex-direction: column;

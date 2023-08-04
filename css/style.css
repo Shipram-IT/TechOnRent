@@ -14,23 +14,27 @@
     --primary-red: #e74c3c;
     --dark-ash: #34495e;
 }
+/* style for body */
 body{
     background-color:  var(--body-background);
     font-family: "Poppins", sans-serif;
-
 }
+/* styles for main section. adding a min height so that the footer always stays a bit bottom. and adding bottom margin to have margin before the footer */
 main{
     min-height: 82vh;
     margin-bottom: 1rem;
 }
+/* style for all the section headers */
 .section-header {
     text-align: center;
     text-transform: uppercase;
     color: var(--primary-purple);
 }
+/* style for navbar logo */
 #logo{
     height: 5rem;
 }
+/* style for navbar */
 #navbar{
     display: flex;
     align-items: center;
@@ -64,6 +68,9 @@ main{
     background-size: cover;
     color: var(--primary-purple) !important;
 }
+/* end of navbar style */
+
+/* style for primary button to use it everywhere */
 .primary-btn{
     background-color: var(--primary-purple);
     color: white; /* adding important to ignore any overlapping design */
@@ -75,6 +82,10 @@ main{
     text-decoration: none;
     text-transform: uppercase;
 }
+.primary-btn:hover{
+    cursor: pointer;    
+    background-color: var(--primary-purple-darker);
+}
 /* making the hover effect different text color only for the navbar btn */
 #navbar .primary-btn{
     color: white;
@@ -85,6 +96,7 @@ main{
 
 }
 
+/* style for secondary button to use it everywhere */
 .secondary-btn{
     background-color: white;
     color: var(--primary-purple);
@@ -100,6 +112,9 @@ main{
 .secondary-btn:hover{
     background-color: var(--secondary-silver);
 }
+/* end of styles for buttons */
+
+/* style for mobile specific navigation */
 #mobile-nav{
     display: flex;
     justify-content: center;
@@ -125,10 +140,9 @@ main{
 .separator{
     border: 1px solid white;
 }
-.primary-btn:hover{
-    cursor: pointer;    
-    background-color: var(--primary-purple-darker);
-}
+/* end of mobile specific navigations */
+
+/* styles that are used in product list page */
 .border-btn{
     border: 1px solid var(--primary-purple);
     color: var(--primary-purple);
@@ -162,6 +176,7 @@ main{
 sup {
     vertical-align: top;
 }
+/* end of styles that are used in product list page */
 
 /* styles for footer section */
 #copyright{
@@ -198,11 +213,15 @@ footer input:focus-visible{
 footer h2{
     color: white;
 }
+/* end of styles for footer section */
+
+/* styles for tab */
 @media (min-width: 481px) and (max-width: 768px) {
     footer h2{
         font-size: 1rem;
     }
 }
+/* styles for tab and desktop */
 @media only screen and (min-width: 481px) {
     #navbar{
         position: fixed;
@@ -216,10 +235,6 @@ footer h2{
     main{
         padding-top: 4.5rem;
     }
-    
-    
-    
-    
     footer .flex-container{
         display: flex;
         justify-content: center;
@@ -229,9 +244,10 @@ footer h2{
         
     }
     footer .flex-container div{
-        flex: 1; /*ti make all the flex box same width so that it get centered properly*/
+        flex: 1; /*to make all the flex box same width so that it get centered properly*/
     }
 }
+/* styles for mobile */
 @media (min-width: 0) and (max-width: 480px) {
     #navbar {
         flex-direction: column;
