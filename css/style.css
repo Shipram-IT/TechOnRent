@@ -88,7 +88,7 @@ main{
 .secondary-btn{
     background-color: white;
     color: var(--primary-purple);
-    padding: 1vw 1.5rem !important;
+    padding: 1rem 1.5rem !important;
     border-radius: 5px;
     border: 1px solid var(--primary-purple);
     font-weight: bold;

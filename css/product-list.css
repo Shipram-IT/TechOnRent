@@ -2,7 +2,7 @@
 /* DATE: August 1, 2023 */
 
 main {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -115,6 +115,6 @@ h4 {
     }
 
     .load-more div {
-        width: 28%;
+        width: 100%;
     }
 }
