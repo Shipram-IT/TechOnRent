@@ -1,10 +1,12 @@
-section{
-    width: 100%;
-}
+/* Authors: Olumayowa Mosuro | Paulo Massao Kawakami | Rafaeatul Kabir | Shivani Sehgal */
+/* DATE: August 1, 2023 */
+
+/* style for all the images in the page */
 img{
     width: 100%;
     display: block;
 }
+/* styles of banner */
 #banner{
     margin-top: 1rem;
 }
@@ -18,12 +20,17 @@ img{
     bottom: 1rem;
     right: 1rem;
 }
-
+/* styles for the top 3 headers of this page */
 h1, h2, h3{
     text-transform: uppercase;
     color: var(--primary-purple);
 }
-/* adding logo's font family here to make the name look like logo */
+h1{
+    text-align: center;
+}
+/* end of styles of headers */
+
+/* banner text styles for making it looks like logo */
 .company-name{
     font-family: 'League Gothic';
     color: var(--primary-purple);
@@ -35,13 +42,11 @@ h1, h2, h3{
     font-size: 10vw;
     font-weight: 400;
     margin: 0;
-
 }
 #banner-text pre{
     text-align: center;
     margin: 0;
 }
-/* making the subtext look like logo's subtext by changing the font family */
 #banner-text h4{
     font-family: 'Raleway';
     color: var(--primary-purple);
@@ -50,6 +55,9 @@ h1, h2, h3{
     font-size: 1.5vw;
 
 }
+/* end of banner text styles */
+
+
 /* animation */
 #banner-text h4 {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -74,12 +82,14 @@ h1, h2, h3{
     from, to { border-color: transparent }
     50% { border-color: var(--primary-purple); }
   }
+/* end styles for animation */
+
+/* style for category names */
 .cat-name{
     color: var(--primary-silver);
 }
-h1{
-    text-align: center;
-}
+
+/*styles for the flex container and its items*/
 .flex-container{
     align-items: center;
     justify-content: center;
@@ -91,6 +101,8 @@ h1{
     flex: 0 0 33%;
     max-width: 20rem;
 }
+/*end of flex container styles*/
+/*making the item relative so the overlay and texts can be absolute to the items*/
 .item{
     position: relative;
 }
@@ -113,6 +125,16 @@ h1{
     opacity: 0.9;
     cursor: pointer;
 }
+/* topright class for the names to set at corner when in tab and mobile mode. as hover don't work there */
+.topright {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--primary-purple);
+    padding: 10px;
+    opacity: 0.8;
+    visibility: hidden;
+}
 .text {
     color: var(--primary-silver);
     position: absolute;
@@ -122,7 +144,9 @@ h1{
     transform: translate(-50%, -50%);
     font-weight: bold;
 }
+/* end of overlay design */
 
+/* designing the stats section */
 .number-container{
     text-align: center;
 }
@@ -131,6 +155,9 @@ h1{
     color: var(--primary-purple);
     text-shadow: .3rem .5rem var(--primary-silver);
 }
+/* end of the stats section */
+
+/* styles for the products line */
 .product-image{
     border-radius: 5px;
 }
@@ -147,16 +174,6 @@ h1{
 .product-container:hover{
     background-color: var(--primary-silver);
 }
-/* topright class for the names to set at corner when in tab and mobile mode. as hover don't work there */
-.topright {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: var(--primary-purple);
-    padding: 10px;
-    opacity: 0.8;
-    visibility: hidden;
-}
 .product-description{
     text-align: left;
     padding: 0px 2px;
@@ -165,6 +182,9 @@ h1{
     float: right;
     color: var(--primary-purple);
 }
+/* end of the product line styles */
+
+/* style for partner section*/
 #partner{
     margin-top: 2rem;
     width: 100%;
@@ -176,10 +196,15 @@ h1{
 .partner-logo{
     max-width: 15rem;
     display: inline;
+    vertical-align: middle;
 }
 #partner-logo-container{
     text-align: center;
-}
+    
+} 
+/* end style for partner section*/
+
+/* styles for the articles for business summery */
 article{
     margin: 2em;
     font-size: 150%;
@@ -191,13 +216,16 @@ article a{
     font-weight: bold;
     text-decoration: none;
 }
+/* end of the articles styles */
 
+/* styles for desktop */
 @media screen and (min-width: 769px) {
     /* making the article have more margin in desktop mode */
     article{
         margin: 4em;
     }
 }
+/* styles for mobile */
 @media (min-width: 0) and (max-width: 480px) {
     /* making the flex items in column mode for mobile screen */
     .flex-container {
@@ -205,13 +233,14 @@ article a{
     }
     
 }
-
+/* styles for tab */
 @media (min-width: 481px) and (max-width: 768px) {
     .flex-content{
         /* flex grow 0, flex shrink 0 and flex basis 50%, making the flex items each taking 50% for tab mode */
         flex: 0 0 50%; 
     }
 }
+/* styles that are common for mobile and tab */
 @media only screen and (max-width: 768px) {
     /* hiding the overlay affects as hover won't work in tab and mobile mode, and making the top right corner area visible  */
     .topright{
@@ -219,6 +248,9 @@ article a{
     }
     .overlay{
         visibility: hidden;
+    }
+    .number{
+        font-size: 300%;
     }
 }
 

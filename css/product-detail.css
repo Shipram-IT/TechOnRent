@@ -1,8 +1,10 @@
-/* AUTHOR: SHIVANI SEHGAL | JULY 14, 2023 */
+/* Authors: Olumayowa Mosuro | Paulo Massao Kawakami | Rafaeatul Kabir | Shivani Sehgal */
+/* DATE: August 1, 2023 */
 
 main {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
+    margin-bottom: 1rem;
 }
 
 h1 {
@@ -30,14 +32,19 @@ a {
 .right {
     width: 57%;
 }
-
+/* Styles for product image container */
+.product-image-container{
+    text-align: center;
+}
+/* Styles for product image */
 .product-image{
     width: 100%;
-    max-height: 350px;
-    display: block;
+    max-width: 25rem;
+    /* display: block; */
     border-radius: 5px;
 }
 
+/* Styles for buttons container */
 .buttons-wrapper {
     display: flex;
     justify-content: space-between;
@@ -45,10 +52,14 @@ a {
 }
 
 .buttons-wrapper a {
-    width: 35%;
+    width: 48%;
     text-align: center;
     margin: 0;
-    font-size: 68%;
+}
+
+.buttons-wrapper a button {
+    width: 100%;
+    font-size: 0.75rem;
 }
 
 .primary-btn:hover {
@@ -56,6 +67,7 @@ a {
     color: white;
 }
 
+/* Styles for product card content */
 .card-content {
     text-align: left;
     padding: 0 10px;
@@ -69,6 +81,7 @@ a {
     margin: 10px 0;
 }
 
+/* Styles for owner details */
 .owner {
     display: flex;
     align-items: center;
@@ -79,6 +92,7 @@ a {
     height: 10%;
 }
 
+/* Styles for product description */
 .product-description {
     margin: 20px 0;
 }
@@ -89,30 +103,27 @@ a {
     margin: 10px 0;
 }
 
-article {
+/* Styles for product summary */
+main p {
     font-size: smaller;
     text-align: justify;
 }
 
-@media screen and (max-width: 1060px) {
-    .buttons-wrapper a {
-        font-size: 66%;
-        width: 29%;
-    }
-}
-
-@media screen and (min-width: 481px) and (max-width: 769px) {
+/* Media query for tablet */
+@media screen and (max-width: 769px)  {
+    /* Show button in columns */
     .buttons-wrapper {
         flex-direction: column;
     }
 
+    /* Style for buttons on tablet */
     .buttons-wrapper a {
-        font-size: 66%;
-        width: auto;
+        width: 100%;
         margin-bottom: 10px;
     }
 }
 
+/* Media query for mobile */
 @media screen and (max-width: 480px) {
     h1 {
         font-size: 8vw;
@@ -126,17 +137,8 @@ article {
         flex-direction: column;
     }
 
+    /* Full screen width for left and right container in mobile */
     .left, .right {
         width: auto;
-    }
-
-    .buttons-wrapper {
-        flex-direction: column;
-    }
-
-    .buttons-wrapper a {
-        font-size: 0.9rem;
-        width: auto;
-        margin-bottom: 10px;
     }
 }

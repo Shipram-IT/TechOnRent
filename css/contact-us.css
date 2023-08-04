@@ -1,3 +1,6 @@
+/* Authors: Olumayowa Mosuro | Paulo Massao Kawakami | Rafaeatul Kabir | Shivani Sehgal */
+/* DATE: August 1, 2023 */
+
 /*Main Content Container - FLEX*/
 .flex-container {
     display: flex;
@@ -64,14 +67,15 @@ svg{
 }
 
 .flex-item-right {
+    
     color: var(--primary-purple-darker);
-    padding: 10px;
-    flex: auto;
-    background-color: var(--primary-silver);
-    background-image: linear-gradient(to bottom, var(--primary-silver), var(--body-background));
+    padding: 3rem;
+    /* flex: auto; */
+    /* background-color: var(--primary-silver); */
+    /* background-image: linear-gradient(to bottom, var(--primary-silver), var(--body-background)); */
 }
 
-textarea, select, input {
+.contact-us-form-input {
     box-sizing: border-box;
     width: 100%;
     border-radius: 15px;
@@ -81,7 +85,7 @@ textarea, select, input {
     border-width: 2px;
 }
 
-input:focus, select:focus, textarea:focus {
+contact-us-form-input:focus {
     border: 3px solid var(--primary-purple-darker);
     outline: none;
 }

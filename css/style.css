@@ -1,3 +1,6 @@
+/* Authors: Olumayowa Mosuro | Paulo Massao Kawakami | Rafaeatul Kabir | Shivani Sehgal */
+/* DATE: August 1, 2023 */
+
 /* declaring all the colors of the website as variables */
 :root{
     --primary-silver: #bdc3c7;
@@ -11,22 +14,27 @@
     --primary-red: #e74c3c;
     --dark-ash: #34495e;
 }
+/* style for body */
 body{
     background-color:  var(--body-background);
     font-family: "Poppins", sans-serif;
-
 }
+/* styles for main section. adding a min height so that the footer always stays a bit bottom. and adding bottom margin to have margin before the footer */
 main{
     min-height: 82vh;
+    margin-bottom: 1rem;
 }
+/* style for all the section headers */
 .section-header {
     text-align: center;
     text-transform: uppercase;
     color: var(--primary-purple);
 }
+/* style for navbar logo */
 #logo{
     height: 5rem;
 }
+/* style for navbar */
 #navbar{
     display: flex;
     align-items: center;
@@ -60,9 +68,12 @@ main{
     background-size: cover;
     color: var(--primary-purple) !important;
 }
+/* end of navbar style */
+
+/* style for primary button to use it everywhere */
 .primary-btn{
     background-color: var(--primary-purple);
-    color: white !important; /* adding important to ignore any overlapping design */
+    color: white; /* adding important to ignore any overlapping design */
     padding: 1rem 1.5rem !important;
     border-radius: 5px;
     border: none;
@@ -71,15 +82,25 @@ main{
     text-decoration: none;
     text-transform: uppercase;
 }
-/* .primary-btn:hover{
-    background-image: url("../img/cursor-bg.png");
-    background-position: center;
-    background-size: cover;
-} */
+.primary-btn:hover{
+    cursor: pointer;    
+    background-color: var(--primary-purple-darker);
+}
+/* making the hover effect different text color only for the navbar btn */
+#navbar .primary-btn{
+    color: white;
+}
+/* making the btn color different for navbar to make the text visible */
+#navbar .primary-btn:hover{
+    color: var(--primary-purple); 
+
+}
+
+/* style for secondary button to use it everywhere */
 .secondary-btn{
     background-color: white;
     color: var(--primary-purple);
-    padding: 1vw 1.5rem !important;
+    padding: 1rem 1.5rem !important;
     border-radius: 5px;
     border: 1px solid var(--primary-purple);
     font-weight: bold;
@@ -91,6 +112,9 @@ main{
 .secondary-btn:hover{
     background-color: var(--secondary-silver);
 }
+/* end of styles for buttons */
+
+/* style for mobile specific navigation */
 #mobile-nav{
     display: flex;
     justify-content: center;
@@ -116,10 +140,9 @@ main{
 .separator{
     border: 1px solid white;
 }
-.primary-btn:hover{
-    cursor: pointer;    
-    background-color: var(--primary-purple-darker);
-}
+/* end of mobile specific navigations */
+
+/* styles that are used in product list page */
 .border-btn{
     border: 1px solid var(--primary-purple);
     color: var(--primary-purple);
@@ -153,8 +176,29 @@ main{
 sup {
     vertical-align: top;
 }
-footer h2{
-    color: white;
+/* end of styles that are used in product list page */
+
+/* styles for footer section */
+#copyright{
+    text-align: center;
+    color: var(--primary-purple);
+    font-weight: bold;
+}
+footer ul{
+    list-style-type: none;
+    padding-inline-start: 0; /*to remove the default left padding*/   
+}
+footer .flex-container{
+    background-color: var(--primary-purple-lighter);
+    color: var(--primary-purple-darker);
+}
+footer .flex-container div{
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--primary-purple-darker);
 }
 footer input{
     margin-bottom: 1em;
@@ -166,34 +210,18 @@ footer input{
 footer input:focus-visible{
     outline-color: var(--primary-purple);
 }
-footer a{
-    text-decoration: none;
-    font-weight: bold;
-    color: var(--primary-purple-darker);
+footer h2{
+    color: white;
 }
-footer ul{
-    list-style-type: none;
-    padding-inline-start: 0; /*to remove the default left padding*/   
-}
-footer .flex-container{
-    display: flex;
-    justify-content: center;
-    align-items: first baseline;
-    background-color: var(--primary-purple-lighter);
-    padding:0 0 1rem;
-    color: var(--primary-purple-darker);
-}
-footer .flex-container div{
-    flex: 1;
-    text-align: center;
-}
+/* end of styles for footer section */
 
-#copyright{
-    text-align: center;
-    color: var(--primary-purple);
-    font-weight: bold;
+/* styles for tab */
+@media (min-width: 481px) and (max-width: 768px) {
+    footer h2{
+        font-size: 1rem;
+    }
 }
-
+/* styles for tab and desktop */
 @media only screen and (min-width: 481px) {
     #navbar{
         position: fixed;
@@ -207,14 +235,28 @@ footer .flex-container div{
     main{
         padding-top: 4.5rem;
     }
+    footer .flex-container{
+        display: flex;
+        justify-content: center;
+        align-items: first baseline; /*to keep the content with the upperline/baseline*/  
+        padding-bottom: 1rem;
+        padding-right: 1rem;
+        
+    }
+    footer .flex-container div{
+        flex: 1; /*to make all the flex box same width so that it get centered properly*/
+    }
 }
+/* styles for mobile */
 @media (min-width: 0) and (max-width: 480px) {
     #navbar {
         flex-direction: column;
     }
     .web-only-element{
-        visibility: hidden;
-        position: absolute;
+        display: none;
+    }
+    #web-only-element{
+        display: none;
     }
     #mobile-nav{
         visibility: visible;
