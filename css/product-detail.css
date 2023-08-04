@@ -2,7 +2,7 @@
 /* DATE: August 1, 2023 */
 
 main {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     margin-bottom: 1rem;
 }
@@ -38,9 +38,9 @@ a {
 }
 /* Styles for product image */
 .product-image{
-    /* width: 100%; */
+    width: 100%;
     max-width: 25rem;
-    /* display: block; */
+    display: block;
     border-radius: 5px;
 }
 
@@ -52,10 +52,14 @@ a {
 }
 
 .buttons-wrapper a {
-    width: 35%;
+    width: 48%;
     text-align: center;
     margin: 0;
-    font-size: 68%;
+}
+
+.buttons-wrapper a button {
+    width: 100%;
+    font-size: 0.75rem;
 }
 
 .primary-btn:hover {
@@ -105,16 +109,8 @@ main p {
     text-align: justify;
 }
 
-/* Media query for desktop screen widths less than 1060px */
-@media screen and (max-width: 1060px) {
-    .buttons-wrapper a {
-        font-size: 66%;
-        width: 29%;
-    }
-}
-
 /* Media query for tablet */
-@media screen and (max-width: 769px) and (min-width: 481px)  {
+@media screen and (max-width: 769px)  {
     /* Show button in columns */
     .buttons-wrapper {
         flex-direction: column;
@@ -122,8 +118,7 @@ main p {
 
     /* Style for buttons on tablet */
     .buttons-wrapper a {
-        font-size: 66%;
-        width: auto;
+        width: 100%;
         margin-bottom: 10px;
     }
 }
@@ -145,15 +140,5 @@ main p {
     /* Full screen width for left and right container in mobile */
     .left, .right {
         width: auto;
-    }
-
-    .buttons-wrapper {
-        flex-direction: column;
-    }
-
-    .buttons-wrapper a {
-        font-size: 0.9rem;
-        width: auto;
-        margin-bottom: 10px;
     }
 }
