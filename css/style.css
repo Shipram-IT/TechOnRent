@@ -253,8 +253,10 @@ footer h2{
         flex-direction: column;
     }
     .web-only-element{
-        visibility: hidden;
-        position: absolute;
+        display: none;
+    }
+    #web-only-element{
+        display: none;
     }
     #mobile-nav{
         visibility: visible;
