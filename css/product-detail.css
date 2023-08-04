@@ -40,7 +40,7 @@ a {
 .product-image{
     width: 100%;
     max-width: 25rem;
-    display: block;
+    /* display: block; */
     border-radius: 5px;
 }
 

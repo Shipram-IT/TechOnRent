@@ -184,7 +184,7 @@ h1{
 }
 /* end of the product line styles */
 
-/* 
+/* style for partner section*/
 #partner{
     margin-top: 2rem;
     width: 100%;
@@ -196,10 +196,13 @@ h1{
 .partner-logo{
     max-width: 15rem;
     display: inline;
+    vertical-align: middle;
 }
 #partner-logo-container{
     text-align: center;
-} */
+    
+} 
+/* end style for partner section*/
 
 /* styles for the articles for business summery */
 article{
@@ -245,6 +248,9 @@ article a{
     }
     .overlay{
         visibility: hidden;
+    }
+    .number{
+        font-size: 300%;
     }
 }
 
