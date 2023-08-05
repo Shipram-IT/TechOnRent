@@ -184,6 +184,13 @@ h1{
 }
 /* end of the product line styles */
 
+/* style for stats section */
+.stats{
+    display: flex; 
+    justify-content: space-evenly; 
+    width: 100%;
+}
+
 /* style for partner section*/
 #partner{
     margin-top: 2rem;

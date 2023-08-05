@@ -253,10 +253,7 @@ footer h2{
         flex-direction: column;
     }
     .web-only-element{
-        display: none;
-    }
-    #web-only-element{
-        display: none;
+        display: none !important; /*adding important so that it takes priority over all other if any*/
     }
     #mobile-nav{
         visibility: visible;
@@ -264,4 +261,5 @@ footer h2{
     footer{
         padding-bottom:2rem;
     }
+    
 }

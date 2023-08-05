@@ -69,10 +69,7 @@ h1, h2, h3{
     text-align: center;
 }
 /*styles for elements isn the table*/
-.flex-right{
-    /* adding overflow so in small size images it will get a horizontal scrolling */
-    overflow-x: auto;
-}
+
 .status{
     font-size: 70%;
     padding: 3px 10px;
