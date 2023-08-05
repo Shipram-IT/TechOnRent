@@ -212,6 +212,7 @@ footer input:focus-visible{
 }
 footer h2{
     color: white;
+    text-transform: uppercase;
 }
 /* end of styles for footer section */
 
@@ -260,6 +261,10 @@ footer h2{
     }
     footer{
         padding-bottom:2rem;
+    }
+    .flex-container{
+        display: flex;
+        flex-direction: column;
     }
     
 }
