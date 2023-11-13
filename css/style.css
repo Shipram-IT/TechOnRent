@@ -1,5 +1,7 @@
+/* declaring all the colors of the website as variables */
 :root{
     --primary-silver: #bdc3c7;
+    --secondary-silver: #dee1e3;
     --primary-purple: #8e44ad;
     --body-background: #ecf0f1;
     --primary-purple-lighter: #9b59b6;
@@ -12,6 +14,10 @@
 body{
     background-color:  var(--body-background);
     font-family: "Poppins", sans-serif;
+
+}
+main{
+    min-height: 82vh;
 }
 .section-header {
     text-align: center;
@@ -24,7 +30,6 @@ body{
 #navbar{
     display: flex;
     align-items: center;
-    color: var(--primary-purple);
     font-weight: bold; 
     flex-direction: row;
     justify-content: space-evenly;
@@ -36,6 +41,7 @@ body{
 
 #navbar a{
     text-decoration: none;
+    color: var(--primary-purple);
     font-size: 1rem;
     padding: 0.2rem 0.5rem;
     text-transform: uppercase;
@@ -56,8 +62,8 @@ body{
 }
 .primary-btn{
     background-color: var(--primary-purple);
-    color: white;
-    padding: 1vw 1.5rem !important;
+    color: white !important; /* adding important to ignore any overlapping design */
+    padding: 1rem 1.5rem !important;
     border-radius: 5px;
     border: none;
     font-weight: bold;
@@ -65,10 +71,25 @@ body{
     text-decoration: none;
     text-transform: uppercase;
 }
-.primary-btn:hover{
+/* .primary-btn:hover{
     background-image: url("../img/cursor-bg.png");
     background-position: center;
     background-size: cover;
+} */
+.secondary-btn{
+    background-color: white;
+    color: var(--primary-purple);
+    padding: 1vw 1.5rem !important;
+    border-radius: 5px;
+    border: 1px solid var(--primary-purple);
+    font-weight: bold;
+    font-size:1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.secondary-btn:hover{
+    background-color: var(--secondary-silver);
 }
 #mobile-nav{
     display: flex;
@@ -97,16 +118,80 @@ body{
 }
 .primary-btn:hover{
     cursor: pointer;    
-    background-color: var(--primary-purple-lighter);
+    background-color: var(--primary-purple-darker);
+}
+.border-btn{
+    border: 1px solid var(--primary-purple);
     color: var(--primary-purple);
 }
-footer{
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
+.rating {
+    cursor: pointer;
+}
+.reviews {
+    font-size: 0.8rem;
+}
+.price-container{
+    color: var(--primary-purple-darker);
+    line-height: 1;
+}
+.price {
     font-weight: bold;
+    font-size: 2rem;
+}
+.owner .owner-details {
+    padding: 4px 6px;
+}
+.owner-img {
+    border-radius: 50%;
+    width: 13%;
+    height: 13%;
+}
+.owner-details div {
+    padding: 0px;
+    font-size: x-small;
+}
+sup {
+    vertical-align: top;
+}
+footer h2{
+    color: white;
+}
+footer input{
+    margin-bottom: 1em;
+    padding: 1em;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+}
+footer input:focus-visible{
+    outline-color: var(--primary-purple);
+}
+footer a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--primary-purple-darker);
+}
+footer ul{
+    list-style-type: none;
+    padding-inline-start: 0; /*to remove the default left padding*/   
+}
+footer .flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: first baseline;
+    background-color: var(--primary-purple-lighter);
+    padding:0 0 1rem;
+    color: var(--primary-purple-darker);
+}
+footer .flex-container div{
+    flex: 1;
+    text-align: center;
+}
+
+#copyright{
+    text-align: center;
     color: var(--primary-purple);
+    font-weight: bold;
 }
 
 @media only screen and (min-width: 481px) {
@@ -118,6 +203,7 @@ footer{
         z-index: 1;
         background-color: var(--body-background);
     }
+
     main{
         padding-top: 4.5rem;
     }

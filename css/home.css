@@ -1,0 +1,226 @@
+section{
+    width: 100%;
+}
+img{
+    width: 100%;
+    display: block;
+}
+#banner{
+    margin-top: 1rem;
+}
+/* making banner section relative to position the texts in corner as absolute */
+#banner-section{
+    position: relative;
+}
+/* making the texts absolute to the relative container to make them sit in corner */
+#banner-text{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+h1, h2, h3{
+    text-transform: uppercase;
+    color: var(--primary-purple);
+}
+/* adding logo's font family here to make the name look like logo */
+.company-name{
+    font-family: 'League Gothic';
+    color: var(--primary-purple);
+    font-size: 200%;
+}
+#banner-text h1{
+    font-family: 'League Gothic';
+    text-transform: capitalize;
+    font-size: 10vw;
+    font-weight: 400;
+    margin: 0;
+
+}
+#banner-text pre{
+    text-align: center;
+    margin: 0;
+}
+/* making the subtext look like logo's subtext by changing the font family */
+#banner-text h4{
+    font-family: 'Raleway';
+    color: var(--primary-purple);
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.5vw;
+
+}
+/* animation */
+#banner-text h4 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid var(--primary-purple); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    
+    /* animation style */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--primary-purple); }
+  }
+.cat-name{
+    color: var(--primary-silver);
+}
+h1{
+    text-align: center;
+}
+.flex-container{
+    align-items: center;
+    justify-content: center;
+    display: flex; /*making display flex for responsiveness management*/
+    flex-wrap: wrap;   
+}
+.flex-content{
+    margin: .5rem;
+    flex: 0 0 33%;
+    max-width: 20rem;
+}
+.item{
+    position: relative;
+}
+/* overlay effect that will have opacity and be seen when hovering over the images */
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: var(--primary-purple);
+    
+}
+/* making the cursor look like link and giving a little opacity for the hover effect */
+.item:hover .overlay {
+    opacity: 0.9;
+    cursor: pointer;
+}
+.text {
+    color: var(--primary-silver);
+    position: absolute;
+    /* making the text center. using percentage as it is absolute */
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+}
+
+.number-container{
+    text-align: center;
+}
+.number{
+    font-size: 600%;
+    color: var(--primary-purple);
+    text-shadow: .3rem .5rem var(--primary-silver);
+}
+.product-image{
+    border-radius: 5px;
+}
+.product-container{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    padding: 0.5rem;
+    text-align: center;
+}
+.product-link{
+    text-decoration: none;
+    color: var(--primary-purple-darker);
+}
+.product-container:hover{
+    background-color: var(--primary-silver);
+}
+/* topright class for the names to set at corner when in tab and mobile mode. as hover don't work there */
+.topright {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--primary-purple);
+    padding: 10px;
+    opacity: 0.8;
+    visibility: hidden;
+}
+.product-description{
+    text-align: left;
+    padding: 0px 2px;
+}
+.product-price{
+    float: right;
+    color: var(--primary-purple);
+}
+#partner{
+    margin-top: 2rem;
+    width: 100%;
+    background-color: var(--primary-silver);
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+
+}
+.partner-logo{
+    max-width: 15rem;
+    display: inline;
+}
+#partner-logo-container{
+    text-align: center;
+}
+article{
+    margin: 2em;
+    font-size: 150%;
+    text-align: center;
+}
+article a{
+    text-transform: capitalize;
+    color: var(--primary-purple);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 769px) {
+    /* making the article have more margin in desktop mode */
+    article{
+        margin: 4em;
+    }
+}
+@media (min-width: 0) and (max-width: 480px) {
+    /* making the flex items in column mode for mobile screen */
+    .flex-container {
+        flex-direction: column;
+    }
+    
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .flex-content{
+        /* flex grow 0, flex shrink 0 and flex basis 50%, making the flex items each taking 50% for tab mode */
+        flex: 0 0 50%; 
+    }
+}
+@media only screen and (max-width: 768px) {
+    /* hiding the overlay affects as hover won't work in tab and mobile mode, and making the top right corner area visible  */
+    .topright{
+        visibility: visible;
+    }
+    .overlay{
+        visibility: hidden;
+    }
+}
+
+
+  
