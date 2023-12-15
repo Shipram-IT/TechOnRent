@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<!-- Authors: Olumayowa Mosuro | Paulo Massao Kawakami | Rafaeatul Kabir | Shivani Sehgal -->
+<!-- DATE: December 15, 2023 -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,6 +11,8 @@
     <link rel="stylesheet" href="../css/wishlist.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="icon" type="image/x-icon" href="../img/favicon.png">
+    <script src="../js/events.js"></script>
+    <script src="../js/common.js"></script>
 </head>
 <body>
     <nav id="navbar">
@@ -17,12 +21,20 @@
         <a href="./about-us.html" class="web-only-element flex-item">About Us</a>
         <a href="./contact-us.html" class="web-only-element flex-item">Contact Us</a>
         <a id="profile-btn" href="./profile.html" class="primary-btn web-only-element">Profile</a> 
+        <label class="switch">
+            <input id="dark-mode" type="checkbox" onclick="changeMode(this)">
+            <span class="slider round"></span>
+        </label>
     </nav>
     <nav id="mobile-nav">
         <a href="./categories.html" >Categories</a><span class="separator"></span>
         <a href="./about-us.html" >About Us</a><span class="separator"></span>
         <a href="./contact-us.html" >Contact Us</a><span class="separator"></span>
         <a href="./profile.html">Profile</a> 
+        <label class="switch">
+            <input id="dark-mode" type="checkbox" onclick="changeMode(this)">
+            <span class="slider round"></span>
+        </label>
     </nav>
 
     <main>
