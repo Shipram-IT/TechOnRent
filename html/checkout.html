@@ -11,13 +11,19 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 	<title>Tech On Rent - Order Checkout</title>
     <link rel="icon" type="image/x-icon" href="../img/favicon.png">
+    <script src="../js/events.js"></script>
+    <script src="../js/common.js"></script>
 
 </head>
 <body>
     <!--page header -logo only-->
-    <header style="text-align: center;">
+    <header>
         <a href="../index.html"><img src="../img/logo.png" alt="TechOnRent" id="logo" class="flex-item">
         </a>
+        <label class="switch">
+            <input id="dark-mode" type="checkbox" onclick="changeMode(this)">
+            <span class="slider round"></span>
+        </label>
     </header>
     <!-- No NAV bar. The user must finish the purchase or cancel it-->
 
@@ -119,10 +125,10 @@
                 <h3>Payment details</h3>
                 <!-- PAYMENT FORM -->
                 <form>
-                    <label for="name">Cardholder Name:</label>
+                    <label class="form-label" for="name">Cardholder Name:</label>
                     <input class="checkout-input" type="text" id="name" name="name" required><br>
 
-                    <label for="credicard">Credit Card:</label>
+                    <label class="form-label" for="credicard">Credit Card:</label>
                     <input class="checkout-input" type="text" id="credicard" name="credicard" size="16" pattern="[0-9]{16}" placeholder="0000000000000000"><br>
                     
                     <div class="flex-form-container">

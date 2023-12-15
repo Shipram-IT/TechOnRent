@@ -13,6 +13,12 @@ main{
 }
 /*End of Main Content Container*/
 
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2%;
+    align-items: center;
+}
 
 /*Banner Section*/
 #banner-container{
@@ -81,7 +87,7 @@ select, input, .checkout-input {
     outline-color: var(--primary-purple);
 }
 
-label{
+.form-label {
     padding: 1em 0 0 .5em;
     float: left;
 }
