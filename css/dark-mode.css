@@ -16,9 +16,6 @@ body {
     background-color: var(--body-background);
     font-family: "Poppins", sans-serif;
     color: var(--primary-silver-light);
-    -webkit-transition: background-color 1000ms linear;
-    -ms-transition: background-color 1000ms linear;
-    transition: background-color 1000ms linear;
 }
 
 .card {
