@@ -115,11 +115,11 @@ select, input, .checkout-input {
 .heading{
     text-transform: capitalize;
     font-weight: bold;
-    color: var(--primary-purple-darker);
+    color: var(--primary-purple);
 }
 
 .general-text{
-    color: black;
+    color: var(--primary-purple-darke);
     text-align: justify;
     text-justify: inter-word;
 }
