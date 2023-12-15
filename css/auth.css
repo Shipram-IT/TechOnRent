@@ -1,0 +1,35 @@
+.auth-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+#form-container {
+    width: 300px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.step {
+    display: none;
+}
+
+.step[data-step="1"] {
+    display: block;
+}
+#progress-bar-container{
+    border: solid 1px var(--primary-purple);
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+#progress-bar {
+    height: 1rem;
+    border-radius: 10px;
+    background-color: var(--primary-purple);
+    width: 0;
+    transition: width 0.3s ease-in-out;
+}
