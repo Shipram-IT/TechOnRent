@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--- About Page designed by Mayowa, Shivani, Rafeatul, Paulo-->
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/about-us.css">
+    <link rel="stylesheet" href="../css/auth.css">
+    <title>Login</title>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+   
+</head>
+<style>
+    form{
+        text-align: center;
+    }
+    input{
+        margin-top: 1rem;
+    }
+</style>
+
+<body>
+
+    <nav id="navbar">
+        <a href="./../index.html"><img src="../img/logo.png" alt="TechOnRent" id="logo" class="flex-item"></a>
+        <a href="./categories.html" class="web-only-element flex-item">Categories</a>
+        <a href="" class="web-only-element flex-item activated">About Us</a>
+        <a href="./contact-us.html" class="web-only-element flex-item">Contact Us</a>
+        <a id="profile-btn" href="./profile.html" class="primary-btn web-only-element">Profile</a>
+    </nav>
+    <nav id="mobile-nav">
+        <a href="./categories.html">Categories</a><span class="separator"></span>
+        <a href="" class="activated">About Us</a><span class="separator"></span>
+        <a href="./contact-us.html">Contact Us</a><span class="separator"></span>
+        <a href="./profile.html">Profile</a>
+    </nav>
+
+    <main>
+        <section style="margin-top: 5rem;" class="auth-section">
+        <div id="form-container">
+            <form id="login-form" class="form">
+                <label for="login-email">Email:</label>
+                <input type="email" id="login-email" required>
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" required>
+                <button type="submit" class="primary-btn" onclick="login()">Login</button>
+            </form>
+        </div>
+    </section>
+        <script src="../scripts/auth.js"></script>
+    </main>
+    <footer>
+        
+        <div class="flex-container">
+            <div>
+                <ul>
+                    <h2>Useful Links</h2>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Profile</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Newsletter</h2>
+                <form>
+                    <input type="text" placeholder="Your Email Adress">
+                    <br>
+                    <button class="primary-btn">Subscribe Now</button>
+                </form>
+            </div>
+
+            <div>
+                <h2>Contact Address</h2>
+                <p>Lambton College<br>279 Yorkland Blvd,Toronto, ON</p>
+            </div>
+
+        </div>
+    
+
+        <div id="copyright">
+            <p>&copy;SHIRAPAM 2023</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>
