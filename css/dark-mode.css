@@ -20,3 +20,8 @@ body {
     -ms-transition: background-color 1000ms linear;
     transition: background-color 1000ms linear;
 }
+
+.card {
+    background-color: var(--secondary-silver);
+    box-shadow: 0 4px 8px 0 rgba(0,0,24,29.2);
+}
