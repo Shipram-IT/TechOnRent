@@ -9,9 +9,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech On Rent - About Us</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dark-mode.css">
     <link rel="stylesheet" href="../css/about-us.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="icon" type="image/x-icon" href="../img/favicon.png">
+    <script src="../js/events.js"></script>
+    <script src="../js/common.js"></script>
 </head>
 
 <body>
@@ -22,12 +25,20 @@
         <a href="" class="web-only-element flex-item activated">About Us</a>
         <a href="./contact-us.html" class="web-only-element flex-item">Contact Us</a>
         <a id="profile-btn" href="./profile.html" class="primary-btn web-only-element">Profile</a>
+        <label class="switch">
+            <input id="dark-mode" type="checkbox" onclick="changeMode(this)">
+            <span class="slider round"></span>
+        </label>
     </nav>
     <nav id="mobile-nav">
         <a href="./categories.html">Categories</a><span class="separator"></span>
         <a href="" class="activated">About Us</a><span class="separator"></span>
         <a href="./contact-us.html">Contact Us</a><span class="separator"></span>
         <a href="./profile.html">Profile</a>
+        <label class="switch">
+            <input id="dark-mode" type="checkbox" onclick="changeMode(this)">
+            <span class="slider round"></span>
+        </label>
     </nav>
 
     <main>

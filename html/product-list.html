@@ -8,11 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech On Rent - Products</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dark-mode.css">
     <link rel="stylesheet" href="../css/table.css">
     <link rel="stylesheet" href="../css/product-list.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="icon" type="image/x-icon" href="../img/favicon.png">
-
+    <script src="../js/events.js"></script>
+    <script src="../js/common.js"></script>
     <style>
         .status{
             font-size: 70%;
@@ -30,6 +32,10 @@
         <a href="./about-us.html" class="web-only-element flex-item">About Us</a>
         <a href="./contact-us.html" class="web-only-element flex-item">Contact Us</a>
         <a id="profile-btn" href="./profile.html" class="primary-btn web-only-element">Profile</a> 
+        <label class="switch">
+            <input id="dark-mode" type="checkbox" onclick="changeMode(this)">
+            <span class="slider round"></span>
+        </label>
     </nav>
     <!-- Desktop and tablet navbar ends -->
     <!-- Mobile navbar -->
@@ -38,6 +44,10 @@
         <a href="./about-us.html" >About Us</a><span class="separator"></span>
         <a href="./contact-us.html" >Contact Us</a><span class="separator"></span>
         <a href="./profile.html">Profile</a> 
+        <label class="switch">
+            <input id="dark-mode" type="checkbox" onclick="changeMode(this)">
+            <span class="slider round"></span>
+        </label>
     </nav>
     <!-- Mobile navbar ends -->
     <main>

@@ -7,10 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dark-mode.css">
     <link rel="stylesheet" href="../css/contact-us.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 	<title>Tech On Rent - Contact US</title>
     <link rel="icon" type="image/x-icon" href="../img/favicon.png">
+    <script src="../js/events.js"></script>
+    <script src="../js/common.js"></script>
 
 </head>
 <body>
@@ -21,6 +24,10 @@
         <a href="./about-us.html" class="web-only-element flex-item">About Us</a>
         <a href="" class="web-only-element flex-item activated">Contact Us</a>
         <a id="profile-btn" href="./profile.html" class="primary-btn web-only-element">Profile</a> 
+        <label class="switch">
+            <input id="dark-mode" type="checkbox" onclick="changeMode(this)">
+            <span class="slider round"></span>
+        </label>
     </nav>
     <!--Alternate NAV-->
     <nav id="mobile-nav">
@@ -28,6 +35,10 @@
         <a href="./about-us.html" >About Us</a><span class="separator"></span>
         <a href="" class="activated">Contact Us</a><span class="separator"></span>
         <a href="./profile.html">Profile</a> 
+        <label class="switch">
+            <input id="dark-mode" type="checkbox" onclick="changeMode(this)">
+            <span class="slider round"></span>
+        </label>
     </nav>
     <!-- Main content-->
         <main>
