@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechOnRent - My Wishlist</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/wishlist.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="icon" type="image/x-icon" href="../img/favicon.png">
+</head>
+<body>
+    <nav id="navbar">
+        <a href="./../index.html"><img src="../img/logo.png" alt="TechOnRent" id="logo" class="flex-item"></a>
+        <a href="./categories.html" class="web-only-element flex-item">Categories</a>
+        <a href="./about-us.html" class="web-only-element flex-item">About Us</a>
+        <a href="./contact-us.html" class="web-only-element flex-item">Contact Us</a>
+        <a id="profile-btn" href="./profile.html" class="primary-btn web-only-element">Profile</a> 
+    </nav>
+    <nav id="mobile-nav">
+        <a href="./categories.html" >Categories</a><span class="separator"></span>
+        <a href="./about-us.html" >About Us</a><span class="separator"></span>
+        <a href="./contact-us.html" >Contact Us</a><span class="separator"></span>
+        <a href="./profile.html">Profile</a> 
+    </nav>
+
+    <main>
+        <h1 class="section-header">My Wishlist</h1>
+        <ul class="product-list-container">
+            <li class="product-detail-block separator" id="item-1">
+                <!--Item container-->
+                <a class="anchor-block" href="product-detail.html">
+                        <img class="product-img" src="../img/products/galaxy.jpg" alt="samsung-galaxy">
+                        <p class="colored">SAMSUNG GALAXY S22 ULTRA 5G </p>
+                </a>
+                <div class="inner-block-detail">
+                    <p class="colored">Price</p>
+                    <p>$10.00</p>
+                </div>
+                <input class="primary-btn wish-list-button" type="remove-1" value="remove">
+            </li>
+
+            <li class="product-detail-block separator" id="item-2">
+                <!--Item container-->
+                <a class="anchor-block" href="product-detail.html">
+                    <img class="product-img" src="../img/products/product-img6.jpg" alt="phone" class="product-image">
+                    <p class="colored">Google Pixel 7a (128 GB)</p>
+                </a>
+                <div class="inner-block-detail">
+                    <p class="colored">Price</p>
+                    <p>$10.00</p>
+                </div>
+                <input class="primary-btn wish-list-button" type="remove-2" value="remove">
+            </li>
+
+            <li class="product-detail-block separator" id="item-3">
+                <!--Item container-->
+                <a class="anchor-block" href="product-detail.html">
+                        <img class="product-img" src="../img/products/product-img7.jpg" alt="phone" class="product-image">
+                        <p class="colored">Xiaomi 12 Pro 5G</p>
+                </a>
+                <div class="inner-block-detail">
+                    <p class="colored">Price</p>
+                    <p>$10.00</p>
+                </div>
+                <input class="primary-btn wish-list-button" type="remove-3" value="remove">
+            </li>
+        </ul>
+
+    </main>
+
+    <footer>
+        <div class="flex-container">
+            <div>
+                <ul>
+                    <h2>Useful Links</h2>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Profile</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Newsletter</h2>
+                <form>
+                    <input type="text" placeholder="Your Email Adress">
+                    <br>
+                    <button class="primary-btn">Subscribe Now</button>
+                </form>
+            </div>
+
+            <div>
+                <h2>Contact Address</h2>
+                <p>Lambton College<br>279 Yorkland Blvd,Toronto, ON</p>
+            </div>
+
+        </div>
+
+        <div id="copyright">
+            <p>&copy;SHIRAPAM 2023</p>
+        </div>
+
+    </footer>
+    <script>
+        // Function to remove an item from the wishlist
+        function removeFromWishlist(button) {
+            var listItem = button.closest('.product-detail-block');
+            if (listItem) {
+                listItem.remove();
+            }
+        }
+
+        // Add click event listeners to all wishlist buttons
+        var wishlistButtons = document.querySelectorAll('.wish-list-button');
+        wishlistButtons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                removeFromWishlist(button);
+            });
+        });
+    </script>
+</body>
+</html>
