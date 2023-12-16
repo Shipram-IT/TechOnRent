@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--AUTHORS: 
-        Olumayowa Mosuro - c0891502
-        Paulo Massao Kawakami - c0893926
-        Rafaeatul Kabir - c0888535
-        Shivani Sehgal - c0893209
-    DATE: JULY 27, 2023 -->
+<!-- Authors: Olumayowa Mosuro | Paulo Massao Kawakami | Rafaeatul Kabir | Shivani Sehgal -->
+<!-- DATE: August 1, 2023 -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,6 +10,9 @@
     <link rel="stylesheet" href="../css/contact-us.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 	<title>Tech On Rent - Contact US</title>
+    <link rel="icon" type="image/x-icon" href="../img/favicon.png">
+    <script type="module" src="../js/events.js"></script>
+    <script src="../js/common.js"></script>
 
 </head>
 <body>
@@ -24,6 +23,10 @@
         <a href="./about-us.html" class="web-only-element flex-item">About Us</a>
         <a href="" class="web-only-element flex-item activated">Contact Us</a>
         <a id="profile-btn" href="./profile.html" class="primary-btn web-only-element">Profile</a> 
+        <label class="switch">
+            <input id="dark-mode" type="checkbox" onclick="changeMode(this)">
+            <span class="slider round"></span>
+        </label>
     </nav>
     <!--Alternate NAV-->
     <nav id="mobile-nav">
@@ -31,13 +34,17 @@
         <a href="./about-us.html" >About Us</a><span class="separator"></span>
         <a href="" class="activated">Contact Us</a><span class="separator"></span>
         <a href="./profile.html">Profile</a> 
+        <label class="switch">
+            <input id="dark-mode" type="checkbox" onclick="changeMode(this)">
+            <span class="slider round"></span>
+        </label>
     </nav>
     <!-- Main content-->
         <main>
             <!--banner for the page name-->
-            <div id="banner-container">
+            <!-- <div id="banner-container">
                 <h1 id="banner-text">Contact Us</h1>
-            </div>
+            </div> -->
             <div class="flex-container">
                 
                 <!-- CONTACT US INFORMATION CONTAINER-->
@@ -79,19 +86,19 @@
                 <!-- CONTACT US FORM CONTAINER-->
                 <div class="flex-item-right">
                     <h3>Send us a message</h3>
-                    <form>
+                    <form action="../index.html" method="get" onsubmit="messageReceived()">
                         <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required placeholder="Your Name"><br>
+                        <input class="contact-us-form-input" type="text" id="name" name="name" required placeholder="Your Name"><br>
 
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required placeholder="myemail@domain.com"><br>
+                        <input class="contact-us-form-input" type="email" id="email" name="email" required placeholder="myemail@domain.com"><br>
 
                         <label for="phone">Phone: </label>
-                        <input type="tel" id="phone" name="phone" required placeholder="000-333-4444"  pattern="[0-9]{3}-?\s?[0-9]{3}-?\s?[0-9]{4}"><br>
+                        <input class="contact-us-form-input" type="tel" id="phone" name="phone" required placeholder="000-333-4444"  pattern="[0-9]{3}-?\s?[0-9]{3}-?\s?[0-9]{4}"><br>
                         <!--the REGEX above allows dashes or space (- or " ") between the numbers, but they are optional-->
 
                         <label for="reason">Contact Reason:</label>
-                        <select name="reason" id="reason">
+                        <select class="contact-us-form-input" name="reason" id="reason">
                           <option value="support">I need support and&#47;or assistance</option>
                           <option value="finance">Financial issues</option>
                           <option value="information">Ask for information</option>
@@ -100,8 +107,8 @@
                         </select><br>
 
                         <label>Message:</label>
-                        <textarea name="message" id="message" rows="5" required placeholder="Write your message here"></textarea><br><br>
-                        <input type="submit" value="Submit" class="primary-btn">
+                        <textarea class="contact-us-form-input" name="message" id="message" rows="5" required placeholder="Write your message here"></textarea><br><br>
+                        <input class="contact-us-form-input primary-btn" type="submit" value="Submit">
                     </form>
                 </div>
 
@@ -147,6 +154,10 @@
             </div>
     
         </footer>
-
+        <script>
+            function messageReceived() {
+              alert("Thanks for contacting TechOnRent!");
+            }
+        </script>
 </body>
 </html>

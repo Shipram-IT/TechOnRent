@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!--- About Page designed by Mayowa, Shivani, Rafeatul, Paulo-->
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/about-us.css">
+    <link rel="stylesheet" href="../css/auth.css">
+    <title>Registration</title>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+    .step{
+        text-align: center;
+    }
+</style>
+<body>
+
+    <nav id="navbar">
+        <a href="./../index.html"><img src="../img/logo.png" alt="TechOnRent" id="logo" class="flex-item"></a>
+    </nav>
+
+    <main>
+        <section style="margin-top: 5rem;" class="auth-section">
+            <h1>REGISTER</h1>
+            <div id="form-container">
+                <div id="progress-bar-container">
+                    <div id="progress-bar"></div>
+                </div>
+                <form id="registration-form" class="form">
+                    <!-- Step 1 -->
+                    <div class="step" data-step="1">
+                        <div class="flex mr-top-6-pt txt-aln-left">
+                            <label class="width-40-pt" for="first-name">First Name:</label>
+                            <input class="form-input" type="text" id="first-name" required>
+                        </div>
+
+                        <div class="flex mr-top-6-pt txt-aln-left">
+                            <label class="width-40-pt" for="last-name">Last Name:</label>
+                            <input class="form-input" type="text" id="last-name" required>
+                        </div>
+
+                        <button type="button" class="primary-btn mr-top-6-pt width-100-pt" onclick="nextStep(2)">Next</button>
+                        <button type="button" class="secondary-btn mr-top-6-pt width-100-pt" onclick="navigateToLogin()">Login</button>
+                    </div>
+        
+                    <!-- Step 2 -->
+                    <div class="step" data-step="2">
+                        <div class="flex mr-top-6-pt txt-aln-left">
+                            <label class="width-40-pt" for="email">Email:</label>
+                            <input class="form-input" type="email" id="email" required>
+                        </div>
+
+                        <div class="flex mr-top-6-pt txt-aln-left">
+                            <label class="width-40-pt" for="phone">Phone:</label>
+                            <input class="form-input" type="tel" id="phone" required>
+                        </div>
+
+                        <div class="flex mr-top-6-pt txt-aln-left">
+                            <label class="width-40-pt" for="address">Address:</label>
+                            <input class="form-input" type="text" id="address" required>
+                        </div>
+
+                        <div class="flex mr-top-6-pt justify-content-space-between">
+                            <button type="button" class="secondary-btn width-47-pt" onclick="prevStep(1)">Back</button>
+                            <button type="button" class="primary-btn width-47-pt" onclick="nextStep(3)">Next</button>
+                        </div>
+                        
+                        <button type="button" class="secondary-btn mr-top-6-pt width-100-pt" onclick="navigateToLogin()">Login</button>
+                    </div>
+        
+                    <!-- Step 3 -->
+                    <div class="step" data-step="3">
+                        <div class="flex mr-top-6-pt txt-aln-left">
+                            <label class="width-40-pt" for="password">Password:</label>
+                            <input class="form-input" type="password" id="password" required>
+                        </div>
+
+                        <div class="flex mr-top-6-pt txt-aln-left">
+                            <label class="width-40-pt" for="confirm-password">Confirm Password:</label>
+                            <input class="form-input" type="password" id="confirm-password" required>
+                        </div>
+                        
+                        <div class="flex mr-top-6-pt justify-content-space-between">
+                            <button type="button" class="secondary-btn width-47-pt" onclick="prevStep(2)">Back</button>
+                            <button type="submit" class="primary-btn width-47-pt" onclick="validatePassword()">Submit</button>
+                        </div>
+                        
+                        <button type="button" class="secondary-btn mr-top-6-pt width-100-pt" onclick="navigateToLogin()">Login</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <script src="../js/register.js"></script>
+        
+    </main>
+    <footer>
+        <div class="flex-container">
+            <div>
+                <ul>
+                    <h2>Useful Links</h2>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Profile</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Newsletter</h2>
+                <form>
+                    <input type="text" placeholder="Your Email Adress">
+                    <br>
+                    <button class="primary-btn">Subscribe Now</button>
+                </form>
+            </div>
+
+            <div>
+                <h2>Contact Address</h2>
+                <p>Lambton College<br>279 Yorkland Blvd,Toronto, ON</p>
+            </div>
+
+        </div>
+
+        <div id="copyright">
+            <p>&copy;SHIRAPAM 2023</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>

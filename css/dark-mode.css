@@ -1,0 +1,24 @@
+:root {
+    --primary-silver: #2c2c2c;
+    --secondary-silver: #1f1f1f;
+    --primary-silver-light: #bdc3c7;
+    --primary-purple: #8e44ad;
+    --body-background: #121212;
+    --primary-purple-lighter: #7d4a8e;
+    --primary-purple-darker: #5e2971;
+    --primary-silver-darker: #1a1a1a;
+    --primary-green: #2ecc71;
+    --primary-red: #e74c3c;
+    --dark-ash: #121212;
+}
+
+body {
+    background-color: var(--body-background);
+    font-family: "Poppins", sans-serif;
+    color: var(--primary-silver-light);
+}
+
+.card {
+    background-color: var(--secondary-silver);
+    box-shadow: 0 4px 8px 0 rgba(0,0,24,29.2);
+}
