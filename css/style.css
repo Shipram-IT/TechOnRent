@@ -103,6 +103,17 @@ main{
 
 }
 
+.width-40-pt {
+    width: 40%;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    padding: 0.5rem;
+    text-align: center;
+}
+
 /* style for secondary button to use it everywhere */
 .secondary-btn{
     background-color: white;
