@@ -48,25 +48,13 @@ function storeUserData() {
         address,
         password,
     };
+    let users = JSON.parse(localStorage.getItem("users") || "[]");
+    users.push(userData);
 
-    localStorage.setItem("userData", JSON.stringify(userData));   
-    window.location.href = "/html/login.html";
+    localStorage.setItem("users", JSON.stringify(users));   
+    window.location.href = "./login.html";
 }
 
-
-function login() {
-    
-    const storedUserData = JSON.parse(localStorage.getItem("userData"));
-    const loginEmail = document.getElementById("login-email").value;
-    const loginPassword = document.getElementById("login-password").value;
-    if (
-        storedUserData &&
-        loginEmail === storedUserData.email &&
-        loginPassword === storedUserData.password
-    ) {
-        alert(`Welcome, ${storedUserData.firstName} ${storedUserData.lastName}!`);
-        window.location.href = "/html/profile.html"; //NOT WORKING
-    } else {
-        alert("Invalid email or password.");
-    }
+function navigateToLogin() {
+    window.location = "./login.html";
 }
