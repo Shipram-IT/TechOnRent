@@ -63,10 +63,12 @@ function createImageElement(src, alt, classes = []) {
     return img;
 }
 
-function createButtonElement(text, classes = []) {
+function createButtonElement(text, classes = [], id = "", onClick = () => {}) {
     const button = document.createElement('button');
     button.textContent = text;
     button.classList.add(...classes);
+    button.id = id;
+    button.addEventListener('click', onClick);
     return button;
 }
 
@@ -170,20 +172,36 @@ async function renderProductDetail() {
     document.getElementById('back-button').href = getBackLink();
 }
 
+function addToCart() {
+    alert("Product added to cart successfully!");
+}
+
+function buyNow() {
+    window.location = './checkout.html';
+}
+
+function addToWishlist() {
+    window.location = './wishlist.html';
+}
+
 function createLeftContainer(product) {
     const leftContainer = createDivElement(['left']);
 
     const productImageContainer = createDivElement(['product-image-container']);
     const productImage = createImageElement(product.image, 'phone', ['product-image']);
     const buttonsWrapper = createDivElement(['buttons-wrapper']);
-    const addToCartButton = createButtonElement('Add to Cart', ['primary-btn', 'width-40-pt']);
-    const buyNowButton = createButtonElement('Buy Now', ['secondary-btn', 'width-40-pt']);
+    const addToCartButton = createButtonElement('Add to Cart', ['primary-btn', 'width-40-pt'], 'add-to-cart', addToCart);
+    const buyNowButton = createButtonElement('Buy Now', ['secondary-btn', 'width-40-pt'], 'buy-now', buyNow);
+    const buttonsWrapper2 = createDivElement(['buttons-wrapper']);
+    const addToWishlistButton = createButtonElement('Add to Wishlist ❤️', ['secondary-btn', 'width-87-pt'], 'add-to-wishlist', addToWishlist);
 
     productImageContainer.appendChild(productImage);
     buttonsWrapper.appendChild(addToCartButton);
     buttonsWrapper.appendChild(buyNowButton);
+    buttonsWrapper2.appendChild(addToWishlistButton);
     leftContainer.appendChild(productImageContainer);
     leftContainer.appendChild(buttonsWrapper);
+    leftContainer.appendChild(buttonsWrapper2);
 
     return leftContainer;
 }

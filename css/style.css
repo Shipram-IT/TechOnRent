@@ -103,6 +103,10 @@ main{
 
 }
 
+.width-87-pt {
+    width: 87%;
+}
+
 .width-40-pt {
     width: 40%;
 }
@@ -347,6 +351,9 @@ input:checked + .slider:before {
     .flex-container{
         display: flex;
         flex-direction: column;
+    }
+    .width-40-pt, .width-87-pt {
+        width: 100%;
     }
     
 }
