@@ -1,12 +1,21 @@
+h1, h2, h3{
+    text-transform: uppercase;
+    color: var(--primary-purple);
+}
+h1{
+    text-align: center;
+}
+
 .auth-section {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0;
+    flex-direction: column;
 }
 
 #form-container {
-    width: 300px;
+    width: 40%;
 }
 
 .form {

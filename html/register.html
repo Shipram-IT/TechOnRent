@@ -7,76 +7,91 @@
     <link rel="stylesheet" href="../css/auth.css">
     <title>Registration</title>
     <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1"> 
-   
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <style>
     .step{
         text-align: center;
-    }
-    input{
-        margin-top: 1rem;
     }
 </style>
 <body>
 
     <nav id="navbar">
         <a href="./../index.html"><img src="../img/logo.png" alt="TechOnRent" id="logo" class="flex-item"></a>
-        <a href="./categories.html" class="web-only-element flex-item">Categories</a>
-        <a href="" class="web-only-element flex-item activated">About Us</a>
-        <a href="./contact-us.html" class="web-only-element flex-item">Contact Us</a>
-        <a id="profile-btn" href="./profile.html" class="primary-btn web-only-element">Profile</a>
-    </nav>
-    <nav id="mobile-nav">
-        <a href="./categories.html">Categories</a><span class="separator"></span>
-        <a href="" class="activated">About Us</a><span class="separator"></span>
-        <a href="./contact-us.html">Contact Us</a><span class="separator"></span>
-        <a href="./profile.html">Profile</a>
     </nav>
 
     <main>
         <section style="margin-top: 5rem;" class="auth-section">
-        <div id="form-container">
-            <div id="progress-bar-container">
-                <div id="progress-bar"></div>
+            <h1>REGISTER</h1>
+            <div id="form-container">
+                <div id="progress-bar-container">
+                    <div id="progress-bar"></div>
+                </div>
+                <form id="registration-form" class="form">
+                    <!-- Step 1 -->
+                    <div class="step" data-step="1">
+                        <div class="flex mr-top-6-pt txt-aln-left">
+                            <label class="width-40-pt" for="first-name">First Name:</label>
+                            <input class="form-input" type="text" id="first-name" required>
+                        </div>
+
+                        <div class="flex mr-top-6-pt txt-aln-left">
+                            <label class="width-40-pt" for="last-name">Last Name:</label>
+                            <input class="form-input" type="text" id="last-name" required>
+                        </div>
+
+                        <button type="button" class="primary-btn mr-top-6-pt width-100-pt" onclick="nextStep(2)">Next</button>
+                        <button type="button" class="secondary-btn mr-top-6-pt width-100-pt" onclick="navigateToLogin()">Login</button>
+                    </div>
+        
+                    <!-- Step 2 -->
+                    <div class="step" data-step="2">
+                        <div class="flex mr-top-6-pt txt-aln-left">
+                            <label class="width-40-pt" for="email">Email:</label>
+                            <input class="form-input" type="email" id="email" required>
+                        </div>
+
+                        <div class="flex mr-top-6-pt txt-aln-left">
+                            <label class="width-40-pt" for="phone">Phone:</label>
+                            <input class="form-input" type="tel" id="phone" required>
+                        </div>
+
+                        <div class="flex mr-top-6-pt txt-aln-left">
+                            <label class="width-40-pt" for="address">Address:</label>
+                            <input class="form-input" type="text" id="address" required>
+                        </div>
+
+                        <div class="flex mr-top-6-pt justify-content-space-between">
+                            <button type="button" class="secondary-btn width-47-pt" onclick="prevStep(1)">Back</button>
+                            <button type="button" class="primary-btn width-47-pt" onclick="nextStep(3)">Next</button>
+                        </div>
+                        
+                        <button type="button" class="secondary-btn mr-top-6-pt width-100-pt" onclick="navigateToLogin()">Login</button>
+                    </div>
+        
+                    <!-- Step 3 -->
+                    <div class="step" data-step="3">
+                        <div class="flex mr-top-6-pt txt-aln-left">
+                            <label class="width-40-pt" for="password">Password:</label>
+                            <input class="form-input" type="password" id="password" required>
+                        </div>
+
+                        <div class="flex mr-top-6-pt txt-aln-left">
+                            <label class="width-40-pt" for="confirm-password">Confirm Password:</label>
+                            <input class="form-input" type="password" id="confirm-password" required>
+                        </div>
+                        
+                        <div class="flex mr-top-6-pt justify-content-space-between">
+                            <button type="button" class="secondary-btn width-47-pt" onclick="prevStep(2)">Back</button>
+                            <button type="submit" class="primary-btn width-47-pt" onclick="validatePassword()">Submit</button>
+                        </div>
+                        
+                        <button type="button" class="secondary-btn mr-top-6-pt width-100-pt" onclick="navigateToLogin()">Login</button>
+                    </div>
+                </form>
             </div>
-            <form id="registration-form" class="form">
-                <!-- Step 1 -->
-                <div class="step" data-step="1">
-                    <label for="first-name">First Name:</label>
-                    <input type="text" id="first-name" required>
-                    <label for="last-name">Last Name:</label>
-                    <input type="text" id="last-name" required>
-                    <button type="button" class="primary-btn" onclick="nextStep(2)">Next</button>
-                </div>
-    
-                <!-- Step 2 -->
-                <div class="step" data-step="2">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" required>
-                    <label for="phone">Phone:</label>
-                    <input type="tel" id="phone" required>
-                    <label for="address">Address:</label>
-                    <input type="text" id="address" required>
-                    <button type="button" class="primary-btn" onclick="prevStep(1)">Back</button>
-                    <button type="button" class="primary-btn" onclick="nextStep(3)">Next</button>
-                </div>
-    
-                <!-- Step 3 -->
-                <div class="step" data-step="3">
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" required>
-                    <label for="confirm-password">Confirm Password:</label>
-                    <input type="password" id="confirm-password" required>
-                    <button type="button" class="primary-btn" onclick="prevStep(2)">Back</button>
-                    <button type="submit" class="primary-btn" onclick="validatePassword()">Submit</button>
-                </div>
-            </form>
-            
-            
-        </div>
-    </section>
-        <script src="../scripts/auth.js"></script>
+        </section>
+        <script src="../js/register.js"></script>
         
     </main>
     <footer>
