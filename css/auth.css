@@ -42,3 +42,14 @@ h1{
     width: 0;
     transition: width 0.3s ease-in-out;
 }
+
+/* styles for mobile */
+@media (min-width: 0) and (max-width: 480px) {
+    #form-container {
+        width: 80%;
+    }
+
+    .width-40-pt {
+        width: 50%;
+    }
+}

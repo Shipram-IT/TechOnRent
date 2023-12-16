@@ -63,9 +63,8 @@ svg{
 
 /*Form Container and Form Styles*/
 .flex-item-right {
-    
-    color: var(--primary-purple-darker);
-    padding: 3rem;
+    color: var(--primary-purple-lighter);
+    padding: 0 3rem;
     /* flex: auto; */
     /* background-color: var(--primary-silver); */
     /* background-image: linear-gradient(to bottom, var(--primary-silver), var(--body-background)); */

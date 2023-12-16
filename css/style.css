@@ -284,6 +284,7 @@ footer h2{
     display: inline-block;
     width: 60px;
     height: 34px;
+    padding: 0 !important;
 }
   
   /* Hide default HTML checkbox */
@@ -354,6 +355,10 @@ input:checked + .slider:before {
 .form-input:focus {
     border: 3px solid var(--primary-purple-darker);
     outline: none;
+}
+
+a:-webkit-any-link {
+    color: inherit;
 }
 
 /* styles for tab and desktop */
