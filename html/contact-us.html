@@ -86,7 +86,7 @@
                 <!-- CONTACT US FORM CONTAINER-->
                 <div class="flex-item-right">
                     <h3>Send us a message</h3>
-                    <form action="../home/index.html" method="get">
+                    <form action="../index.html" method="get" onsubmit="messageReceived()">
                         <label for="name">Name:</label>
                         <input class="contact-us-form-input" type="text" id="name" name="name" required placeholder="Your Name"><br>
 
@@ -154,6 +154,10 @@
             </div>
     
         </footer>
-
+        <script>
+            function messageReceived() {
+              alert("Thanks for contacting TechOnRent!");
+            }
+        </script>
 </body>
 </html>
