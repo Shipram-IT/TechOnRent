@@ -25,15 +25,30 @@ h1, h2, h3{
 /*end of flex container styles*/
 
 /* style for profile data section */
-#profile-pic{
+/* #profile-pic{
     max-width: 20rem;
     border-radius: 100%;
     border: 5px solid var(--primary-silver);
     margin-bottom: 1rem;
+} */
+#profile-pic {
+    max-width: 20rem;
+    border-radius: 100%;
+    border: 5px solid var(--primary-silver);
+    height: 20rem;
+    font-size: 12rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: darkmagenta;
+    font-family: serif;
+    display: flex;
+    margin: 1rem auto;
 }
 #name-section{
     text-transform: uppercase;
-    color: var(--primary-purple-darker);
+    color: var(--primary-purple-lighter);
     font-weight: bold;
     position: relative;
 }
