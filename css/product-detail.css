@@ -30,7 +30,7 @@ a {
 }
 
 .right {
-    width: 57%;
+    width: 60%;
 }
 /* Styles for product image container */
 .product-image-container{
@@ -47,7 +47,7 @@ a {
 /* Styles for buttons container */
 .buttons-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 15px 0;
 }
 
