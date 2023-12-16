@@ -119,7 +119,7 @@ select, input, .checkout-input {
 }
 
 .general-text{
-    color: var(--primary-purple-darke);
+    color: var(--primary-purple-darker);
     text-align: justify;
     text-justify: inter-word;
 }
