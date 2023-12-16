@@ -1,0 +1,38 @@
+[
+    {
+        "id": 0,
+        "name": "Shivani Sehgal",
+        "productsRented": 10,
+        "image": "../img/products/owners/owner1.jpg" 
+    },
+    {
+        "id": 1,
+        "name": "Paulo Massao Kawakami",
+        "productsRented": 50,
+        "image": "../img/products/owners/owner2.jpg" 
+    },
+    {
+        "id": 2,
+        "name": "Rafaeatul Kabir",
+        "productsRented": 90,
+        "image": "../img/products/owners/owner3.jpg" 
+    },
+    {
+        "id": 3,
+        "name": "Mayowa Mosuro",
+        "productsRented": 60,
+        "image": "../img/products/owners/owner4.jpg" 
+    },
+    {
+        "id": 4,
+        "name": "Cryston Heaven",
+        "productsRented": "1k",
+        "image": "../img/products/owners/owner5.jpg" 
+    },
+    {
+        "id": 5,
+        "name": "Mohammad Kiani",
+        "productsRented": "10k",
+        "image": "../img/products/owners/owner5.jpg" 
+    }
+]
