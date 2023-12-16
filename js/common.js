@@ -20,7 +20,7 @@ function removeDarkTheme() {
     var head = document.head;
     var link = document.getElementById("dark-theme-css");
   
-    head.removeChild(link);
+    if (link) head.removeChild(link);
 }
 
 /**

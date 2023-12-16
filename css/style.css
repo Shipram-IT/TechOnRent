@@ -103,12 +103,45 @@ main{
 
 }
 
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.justify-content-space-between {
+    justify-content: space-between;
+}
+
+.mr-top-4-pt {
+    margin-top: 4%;
+}
+
+.mr-top-6-pt {
+    margin-top: 6%;
+}
+
+.width-100-pt {
+    width: 100%;
+}
+
 .width-87-pt {
     width: 87%;
 }
 
+.width-47-pt {
+    width: 47%;
+}
+
 .width-40-pt {
     width: 40%;
+}
+
+.width-20-pt {
+    width: 20%;
+}
+
+.txt-aln-left {
+    text-align: left;
 }
 
 .card {
@@ -306,6 +339,21 @@ input:checked + .slider:before {
   
 .slider.round:before {
     border-radius: 50%;
+}
+
+.form-input {
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 15px;
+    border-style: solid;
+    padding: 15px;
+    border-color: var(--primary-purple-lighter);
+    border-width: 2px;
+}
+
+.form-input:focus {
+    border: 3px solid var(--primary-purple-darker);
+    outline: none;
 }
 
 /* styles for tab and desktop */
